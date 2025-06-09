@@ -1,0 +1,11 @@
+.ruby-version
+/tmp
+.vscode
+/local_assets
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock

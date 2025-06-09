@@ -1,0 +1,19 @@
+- name: Python
+- name: JavaScript
+- name: HTML
+- name: CSS
+- name: React
+- name: Node.js
+- name: Git
+  projects: ['fire_escape_sim']
+- name: SQL 
+- name: Docker
+- name: Ruby
+- name: C++
+- name: C#
+- name: Java
+- name: Bash
+- name: TypeScript
+- name: Ruby on Rails
+- name: MATLAB
+- name: PHP

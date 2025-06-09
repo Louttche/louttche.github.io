@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="all">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      .wrapper {
+          min-height: 100%;
+          margin: -240px auto 0;
+      }
+    </style>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" }}">
+  </head>
+  <body>
+    <div id="header">
+      {% include navigation.html %}
+    </div>
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+        </div>
+        {{ content }}
+      </section>
+    </div>
+  </body>
+  <footer>
+    <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+  </footer>
+</html>

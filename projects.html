@@ -1,0 +1,12 @@
+---
+    layout: default
+    title: Projects
+    # description: Here is a list of my projects.
+    permalink: /projects/
+---
+
+<ul>
+    {% for project in site.projects %}
+    <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+    {% endfor %}
+</ul>
