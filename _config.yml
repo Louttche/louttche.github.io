@@ -53,7 +53,8 @@ collections:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - _projects/project_template.markdown
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

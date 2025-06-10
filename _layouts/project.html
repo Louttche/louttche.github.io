@@ -1,33 +1,15 @@
 ---
   layout: default
 ---
+{% assign project = page %}
+
 <div>
   {% include image_carousel.html %}
   <hr>
 
-  <h3>About this project</h3>
-  <p>{{ page.content }}</p>
+  {{ page.content }}
 
-  {% if page.key_features.size > 0 %}
-  <h3>Key Features</h3>
-  <ul>
-    {% for key_feature in page.key_features %}
-      <li>{{ key_feature }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if page.challenges %}
-  <h3>Challenges</h3>
-  <p>{{ page.challenges }}</p>
-  {% endif %}
-
-  {% if page.learnings %}
-  <h3>Learnings</h3>
-  <p>{{ page.learnings }}</p>
-  {% endif %}
-
-  {% include skills_list.html %}
+  {% include skills.html %}
 </div>
 <div class="fork">
   {% if page.github %}
