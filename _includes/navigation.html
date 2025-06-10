@@ -2,7 +2,7 @@
   <ul>
     {% assign nav_items = site.data.navigation |  reverse %}
     {% for item in nav_items %}
-      <li class="title"><a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>{{ item.name }}</a></li>
+      <li class="title"><a href="{{ item.link }}" {% if page.url == item.link %} {% endif %}>{{ item.name }}</a></li>
     {% endfor %}
   </ul>
 </nav>
