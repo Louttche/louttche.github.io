@@ -1,25 +1,8 @@
 ---
   layout: default
 ---
-
-{% assign project_images = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
-{% assign col_limit = project_images | size | times: 1.0 | divided_by: 2 | ceil %}
-
 <div>
-  <div>
-    <div class="row">
-      <div class="column">
-        {% for image in project_images limit: col_limit %}
-          <img src="{{ site.baseurl }}{{ image.path }}" />
-        {% endfor %}
-      </div>
-      <div class="column">
-        {% for image in project_images limit: col_limit offset: continue %}
-          <img src="{{ site.baseurl }}{{ image.path }}" />
-        {% endfor %}
-      </div>
-    </div>
-  </div>
+  {% include image_carousel.html %}
   <hr>
 
   <h3>About this project</h3>
@@ -44,15 +27,7 @@
   <p>{{ page.learnings }}</p>
   {% endif %}
 
-  {% assign project_skills = site.data.skills | where_exp: "skill", "skill.projects contains page.slug" %}
-  {% if project_skills.size > 0 %}
-    <h3>Skills Used in This Project</h3>
-    <ul>
-      {% for skill in project_skills %}
-        <li>{{ skill.name }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  {% include skills_list.html %}
 </div>
 <div class="fork">
   {% if page.github %}

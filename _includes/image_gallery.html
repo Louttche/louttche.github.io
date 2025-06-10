@@ -1,0 +1,11 @@
+{% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
+
+{% if image_list != blank %}
+    <div class="gallery-grid">
+        {% for image in image_list %}
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="Project Image" />
+        </div>
+        {% endfor %}
+    </div>
+{% endif %}
