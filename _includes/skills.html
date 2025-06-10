@@ -1,0 +1,9 @@
+{% assign project_skills = site.data.skills | where_exp: "skill", "skill.projects contains project.slug" %}
+
+{% if project_skills.size > 0 %}
+    <div class="skills-container">
+        {% for skill in project_skills %}
+            <span class="skill-badge">{{ skill['name'] | strip }}</span>
+        {% endfor %}
+    </div>
+{% endif %}

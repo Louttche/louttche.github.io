@@ -1,19 +1,61 @@
-- name: Python
-- name: JavaScript
-- name: HTML
-- name: CSS
-- name: React
-- name: Node.js
-- name: Git
-  projects: ['fire_escape_sim']
-- name: SQL 
-- name: Docker
-- name: Ruby
-- name: C++
-- name: C#
-- name: Java
 - name: Bash
-- name: TypeScript
-- name: Ruby on Rails
+  categories: ['scripting', 'devops', 'backend']
+  projects: ['internship']
+- name: C#
+  categories: ['backend', 'game development']
+  projects: ['fire_escape_sim', 'internship']
+- name: C++
+  categories: ['backend', 'game development']
+  projects: ['fire_escape_sim']
+- name: CSS
+  categories: ['frontend', 'web development']
+- name: Docker
+  categories: ['devops', 'containerization']
+  projects: ['internship']
+- name: Git
+  categories: ['version control', 'collaboration']
+- name: HTML
+  categories: ['frontend', 'web development']
+- name: Java
+  categories: ['backend', 'enterprise', 'mobile development']
+- name: JavaScript
+  categories: ['frontend', 'web development', 'scripting']
+- name: Jupyter Notebook
+  categories: ['data analysis', 'data visualization', 'data science']
+  projects: ['internship']
+- name: Linux
+  categories: ['operating systems', 'devops', 'backend', 'embedded systems']
+- name: macOS
+  categories: ['operating systems']
 - name: MATLAB
+  categories: ['data analysis', 'data visualization', 'data science']
+- name: Node.js
+  categories: ['backend', 'web development', 'scripting']
 - name: PHP
+  categories: ['backend', 'web development', 'scripting']
+- name: PostgreSQL
+  categories: ['database', 'data analysis', 'backend']
+- name: Python
+  categories: ['backend', 'data science', 'scripting']
+  projects: ['internship']
+- name: React
+  categories: ['frontend', 'web development', 'UI']
+- name: Ruby
+  categories: ['backend', 'scripting', 'web development']
+- name: Ruby on Rails
+  categories: ['backend', 'web development', 'framework']
+- name: SQL 
+  categories: ['database', 'data analysis', 'backend']
+- name: TensorFlow
+  categories: ['machine learning', 'data science', 'AI']
+  projects: ['internship']
+- name: TypeScript
+  categories: ['frontend', 'web development', 'typed languages']
+- name: Unity
+  categories: ['game development', '3D', 'simulation']
+  projects: ['fire_escape_sim']
+- name: Unreal Engine
+  categories: ['game development', '3D', 'simulation']
+  projects: ['internship']
+- name: Windows
+  categories: ['operating systems']
