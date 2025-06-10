@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".carousel-inner");
+  if (carousel === null) return;
+
   const slides = document.querySelectorAll(".carousel-item");
   const dots = document.querySelectorAll(".dot");
   const prevBtn = document.querySelector(".carousel-prev");
