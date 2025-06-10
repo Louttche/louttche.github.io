@@ -31,7 +31,7 @@ url: https://louttche.github.io  # the base hostname and protocol for your site,
 baseurl: ""     # "/louttche.github.io" place folder name if the site is served in a subfolder
 # baseurl: "" # the subpath of your site, e.g. /blog
 # github_username:  louttche
-
+repository: louttche/louttche.github.io
 # Build settings
 theme: jekyll-theme-midnight
 # plugins:
