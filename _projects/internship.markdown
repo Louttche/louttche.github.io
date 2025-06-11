@@ -3,6 +3,7 @@
     title: Image Processing for Deep learning Training
     description: Internship Project
     image_path: images/internship
+    date: 01-01-2021
 ---
 
 ### About this project

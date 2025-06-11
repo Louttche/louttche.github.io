@@ -3,6 +3,8 @@
     title: Predictive Maintenance of P&P Nozzles
     description: Graduation Internship
     image_path: images/graduation
+    date: 01-06-2022
+    end_date: 01-02-2023
 ---
 
 ### About this project

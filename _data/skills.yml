@@ -1,6 +1,6 @@
 - name: Bash
   categories: ['scripting', 'devops', 'backend']
-  projects: ['internship']
+  projects: ['internship', 'graduation_internship']
 - name: C#
   categories: ['backend', 'game development']
   projects: ['fire_escape_sim', 'internship']
@@ -16,6 +16,7 @@
   categories: ['version control', 'collaboration']
 - name: HTML
   categories: ['frontend', 'web development']
+  projects: ['graduation_internship']
 - name: Java
   categories: ['backend', 'enterprise', 'mobile development']
 - name: JavaScript
@@ -31,13 +32,14 @@
   categories: ['data analysis', 'data visualization', 'data science']
 - name: Node.js
   categories: ['backend', 'web development', 'scripting']
+  projects: ['graduation_internship', 'internship']
 - name: PHP
   categories: ['backend', 'web development', 'scripting']
 - name: PostgreSQL
   categories: ['database', 'data analysis', 'backend']
 - name: Python
   categories: ['backend', 'data science', 'scripting']
-  projects: ['internship']
+  projects: ['internship', 'graduation_internship']
 - name: React
   categories: ['frontend', 'web development', 'UI']
 - name: Ruby

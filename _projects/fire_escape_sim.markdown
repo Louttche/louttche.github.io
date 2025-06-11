@@ -5,6 +5,7 @@
         Unity project featuring building map editting, fire emergency planning, simulation controls, and risk assessment reports
     image_path: images/fire_escape_sim
     github: https://github.com/Louttche/ProCP-Fire_Simulation
+    date: 01-01-2019
 ---
 
 ### About this project
