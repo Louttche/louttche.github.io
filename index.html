@@ -5,8 +5,10 @@ title: Home
 
 <hr/>
 <h1 style="text-align: center; padding-bottom: 1em">Projects</h2>
-<div>
+{% comment %} <div>
     {% for project in site.projects %}
         {% include project_card.html %}
     {% endfor %}
-</div>
+</div> {% endcomment %}
+
+{% include card_carousel.html %}

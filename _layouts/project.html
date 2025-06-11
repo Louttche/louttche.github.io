@@ -4,6 +4,7 @@
 {% assign project = page %}
 
 <div>
+  {% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
   {% include image_carousel.html %}
   <hr>
 

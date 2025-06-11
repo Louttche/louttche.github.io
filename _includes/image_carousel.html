@@ -1,4 +1,3 @@
-{% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
 {% assign slide_count = image_list | size %}
 
 {% if image_list != empty %}
@@ -14,7 +13,7 @@
     <button class="carousel-next">❯</button>
     <div class="carousel-dots">
       {% for i in (1..slide_count) %}
-        <span class="dot" data-index="{{ i }}"></span>
+        <span class="dot" data-index={{ i }}></span>
       {% endfor %}
     </div>
   </div>

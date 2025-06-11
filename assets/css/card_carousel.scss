@@ -1,0 +1,36 @@
+.card-carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 2rem auto;
+}
+
+.card-carousel-inner {
+    display: flex;
+}
+
+.card-carousel-item {
+    min-width: 65%;
+    box-sizing: border-box;
+}
+
+.card-carousel-prev,
+.card-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card-carousel-prev {
+    left: 10px;
+}
+
+.card-carousel-next {
+    right: 10px;
+}

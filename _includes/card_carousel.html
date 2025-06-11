@@ -1,0 +1,22 @@
+{% assign slide_count = site.projects | size %}
+
+{% if slide_count > 1 %}
+  <div class="card-carousel">
+    <div class="card-carousel-inner">
+      {% for project in site.projects %}
+        <div class="card-carousel-item">
+          {% include project_card.html %}
+        </div>
+      {% endfor %}
+    </div>
+    <button class="card-carousel-prev">❮</button>
+    <button class="card-carousel-next">❯</button>
+  </div>
+{% else if slide_count == 1 %}
+  <div class="card-carousel-single">
+    {% assign project = site.projects[0] %}
+    {% include project_card.html %}
+  </div>
+{% else %}
+  <p>No projects available.</p>
+{% endif %}

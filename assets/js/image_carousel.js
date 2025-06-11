@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.querySelector(".carousel-next");
   const slideCount = slides.length;
   let currentIndex = 0;
+  updateDots()
 
-  // Update the current slide
   function showSlide(index) {
     if (index < 0) index = slideCount - 1;
     if (index >= slideCount) index = 0;
@@ -18,18 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
     updateDots();
   }
 
-  // Update dots
   function updateDots() {
     dots.forEach((dot, i) => {
       dot.classList.toggle("active", i === currentIndex);
     });
   }
 
-  // Navigate
   prevBtn.addEventListener("click", () => showSlide(currentIndex - 1));
   nextBtn.addEventListener("click", () => showSlide(currentIndex + 1));
 
-  // Dot click
   dots.forEach((dot, i) => {
     dot.addEventListener("click", () => showSlide(i));
   });
