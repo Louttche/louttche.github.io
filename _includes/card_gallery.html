@@ -1,0 +1,9 @@
+{% if site.projects != blank %}
+    <div class="card-gallery-grid">
+        {% for project in site.projects %}
+        <div class="card-gallery-item">
+            {% include project_card.html %}
+        </div>
+        {% endfor %}
+    </div>
+{% endif %}

@@ -1,0 +1,17 @@
+.card-gallery-grid {
+  display: grid;
+  // minmax ensures responsiveness. Between media max-with and total width of the row does not overflow
+  grid-template-columns: repeat(2, minmax(280px, 500px));
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-gallery-item {
+  max-width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .card-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
