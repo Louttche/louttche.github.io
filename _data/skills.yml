@@ -81,7 +81,7 @@
   categories: ['game development', '3D', 'simulation']
   projects: ['fire_escape_sim']
 - name: Unreal Engine
-  color: "#1A1A2E"
+  color: "#2A1A8E"
   categories: ['game development', '3D', 'simulation']
   projects: ['internship']
 - name: Windows

@@ -31,14 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
     carousel.style.transition = "none";
 
     const { slideWidth, gap } = getSlideMetrics();
-    const shift = slideWidth + gap;
+    const shift = slideWidth + gap - 10;
     carousel.style.transform = `translateX(-${shift}px)`;
     void carousel.offsetWidth;
   }
 
   function move(direction) {
     const { slideWidth, gap } = getSlideMetrics();
-    const shift = slideWidth + gap;
+    const shift = slideWidth + gap - 10;
     carousel.style.transition = "transform 0.5s ease-in-out";
     carousel.style.transform = direction === 1
       ? `translateX(-${shift * 2}px)`
