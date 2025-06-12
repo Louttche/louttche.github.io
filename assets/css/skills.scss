@@ -1,0 +1,24 @@
+.skills-container {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-top: 2.5em;
+  border-top: 1px solid #F3F4F6;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  background-color: #DBEAFE;
+  color: #1E40AF;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: #BFDBFE;
+}

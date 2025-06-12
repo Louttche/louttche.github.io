@@ -6,14 +6,16 @@
 <div>
   {% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
   {% include image_carousel.html %}
-  <hr>
 
-  {{ page.content }}
+  <div id="project-content">
+    {{ page.content }}
 
-  {% include skills.html %}
-</div>
-<div class="fork">
-  {% if page.github %}
-    <a href="{{ page.github }}" class="btn btn-primary">View on GitHub</a>
-  {% endif %}
+    <div class="fork">
+      {% if page.github %}
+        <a href="{{ page.github }}" class="btn btn-primary">View on GitHub</a>
+      {% endif %}
+    </div>
+
+    {% include skills.html %}
+  </div>
 </div>

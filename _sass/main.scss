@@ -1,119 +1,100 @@
 @import "../assets/css/image_gallery.scss";
+@import "../assets/css/card_gallery.scss";
 @import "../assets/css/image_carousel.scss";
 @import "../assets/css/card_carousel.scss";
 @import "../assets/css/contact_form.scss";
 @import "../assets/css/project_card.scss";
+@import "../assets/css/skills.scss";
 
-section {
-    #title {
-        margin: 0px;
-    }
-}
-
-.credits {
-    font-size: 11px;
-    font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    color: #696969;
-    margin-top: -10px;
-
-    &.left {
-        float: left;
-        padding-left: 10px;
-    }
-
-    &.right {
-        float: right;
-        padding-right: 10px;
-    }
-}
-
-.row {
-  display: flex;
-  // flex-wrap: wrap;
-  padding: 0 4px;
+.hpfield {
+  display: none;
 }
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    list-style: none;
-    display: inline;
-    color: white;
-    line-height: 50px;
-    text-shadow: 0px 1px 0px rgba(0,0,0,.2);
-    font-size: 14px;
+  background: linear-gradient(#93bd20, #659e10);
+  background-color: #93bd20;
+  border: 1px solid #5d910b;
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+  color: white;
+  color: white;
+  display: inline;
+  display:inline-block;
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size:14px;
+  font-weight: normal;
+  line-height: 50px;
+  line-height:14px;
+  list-style: none;
+  margin-top: 6px;
+  padding: 10px 12px;
+  text-align:center;
+  text-shadow: 0px 1px 0px rgba(0,0,0,.2);
 
-    color: white;
-    border: 1px solid #5d910b;
-    background: linear-gradient(#93bd20, #659e10);
-    border-radius: 2px;
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+  &:hover {
+    background: linear-gradient(#749619, #527f0e);
+    background-color: #659e10;
+    border: 1px solid #527f0e;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+  }
+}
 
-    background-color: #93bd20;
-    padding: 10px 12px;
-    margin-top: 6px;
-    line-height:14px;
-    font-size:14px;
-    display:inline-block;
-    text-align:center;
+footer {
+  .credits {
+  color: #696969;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  margin-top: -10px;
 
-    &:hover {
-      background: linear-gradient(#749619, #527f0e);
-      background-color: #659e10;
-      border: 1px solid #527f0e;
-      box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
-    }
+  &.left {
+    float: left;
+    padding-left: 10px;
+  }
+  &.right {
+      float: right;
+      padding-right: 10px;
+  }
+}
 }
 
 input[type=text], input[type=email], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-.hpfield {
-  display: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  margin-top: 6px;
+  padding: 12px;
+  width: 100%;
+  resize: vertical;
 }
 
 ul {
+  // overwrite theme's icon (ugly double arrows)
   list-style-image: none;
 }
 
-.wrapper {
-  max-width: 800px;
-}
-
+// One level above '.content'
 section {
   max-width: 100%;
+
+  // Ensure we can use the whole viewport if needed
+  #title {
+    margin: 0 auto;
+    max-width: 40em;
+  }
+  
+  #content {
+    margin: 0 auto;
+    max-width: 75em;
+  }
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 1rem 1.5rem;
-  border-top: 1px solid #F3F4F6;
-}
-
-.skill-badge {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  background-color: #DBEAFE;
-  color: #1E40AF;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-
-.skill-badge:hover {
-  background-color: #BFDBFE;
+hr {
+  margin: 0 auto;
+  max-width: 60em;
 }
