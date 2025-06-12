@@ -89,8 +89,22 @@ section {
   }
   
   #content {
-    margin: 0 auto;
-    max-width: 75em;
+    #content-section {
+      max-width: 900px;
+      margin: 4em auto;
+      padding: 0 1rem;
+      box-sizing: border-box;
+
+      #content-section-title {
+        text-align: center;
+      }
+
+      #content-section-text {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: medium;
+      }
+    }
   }
 }
 
