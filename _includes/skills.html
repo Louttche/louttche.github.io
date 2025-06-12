@@ -3,7 +3,7 @@
 {% if project_skills.size > 0 %}
     <div class="skills-container">
         {% for skill in project_skills %}
-            <span class="skill-badge">{{ skill['name'] | strip }}</span>
+            <span class="skill-badge" style="background-color: {{ skill.color }};">{{ skill['name'] | strip }}</span>
         {% endfor %}
     </div>
 {% endif %}

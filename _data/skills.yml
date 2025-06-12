@@ -1,63 +1,89 @@
 - name: Bash
+  color: "#374151"
   categories: ['scripting', 'devops', 'backend']
   projects: ['internship', 'graduation_internship']
 - name: C#
+  color: "#38761D"
   categories: ['backend', 'game development']
   projects: ['fire_escape_sim', 'internship']
 - name: C++
+  color: "#22577A"
   categories: ['backend', 'game development']
   projects: ['fire_escape_sim']
 - name: CSS
+  color: "#5A189A"
   categories: ['frontend', 'web development']
 - name: Docker
+  color: "#1565A7"
   categories: ['devops', 'containerization']
   projects: ['internship']
 - name: Git
+  color: "#B22222"
   categories: ['version control', 'collaboration']
 - name: HTML
+  color: "#B3541A"
   categories: ['frontend', 'web development']
   projects: ['graduation_internship']
 - name: Java
+  color: "#B8860B"
   categories: ['backend', 'enterprise', 'mobile development']
 - name: JavaScript
+  color: "#B59F00"
   categories: ['frontend', 'web development', 'scripting']
 - name: Jupyter Notebook
+  color: "#B26A00"
   categories: ['data analysis', 'data visualization', 'data science']
   projects: ['internship']
 - name: Linux
+  color: "#444444"
   categories: ['operating systems', 'devops', 'backend', 'embedded systems']
 - name: macOS
+  color: "#666666"
   categories: ['operating systems']
 - name: MATLAB
+  color: "#A63F03"
   categories: ['data analysis', 'data visualization', 'data science']
 - name: Node.js
+  color: "#2D6A4F"
   categories: ['backend', 'web development', 'scripting']
   projects: ['graduation_internship', 'internship']
 - name: PHP
+  color: "#4B3869"
   categories: ['backend', 'web development', 'scripting']
 - name: PostgreSQL
+  color: "#274472"
   categories: ['database', 'data analysis', 'backend']
 - name: Python
+  color: "#1D3557"
   categories: ['backend', 'data science', 'scripting']
   projects: ['internship', 'graduation_internship']
 - name: React
+  color: "#1B4965"
   categories: ['frontend', 'web development', 'UI']
 - name: Ruby
+  color: "#A93226"
   categories: ['backend', 'scripting', 'web development']
 - name: Ruby on Rails
+  color: "#C0392B"
   categories: ['backend', 'web development', 'framework']
 - name: SQL 
+  color: "#B9770E"
   categories: ['database', 'data analysis', 'backend']
 - name: TensorFlow
-  categories: ['machine learning', 'data science', 'AI']
+  color: "#B45F06"
   projects: ['internship']
+  categories: ['machine learning', 'data science', 'AI']
 - name: TypeScript
+  color: "#1565C0"
   categories: ['frontend', 'web development', 'typed languages']
 - name: Unity
+  color: "#23272F"
   categories: ['game development', '3D', 'simulation']
   projects: ['fire_escape_sim']
 - name: Unreal Engine
+  color: "#1A1A2E"
   categories: ['game development', '3D', 'simulation']
   projects: ['internship']
 - name: Windows
+  color: "#003366"
   categories: ['operating systems']
