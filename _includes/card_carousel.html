@@ -1,22 +1,44 @@
 {% assign slide_count = site.projects | size %}
 
-{% if slide_count > 1 %}
-  <div class="card-carousel">
-    <div class="card-carousel-inner">
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
       {% for project in site.projects %}
-        <div class="card-carousel-item">
-          {% include project_card.html %}
-        </div>
+        <li class="glide__slide">{% include project_card.html %}</li>
       {% endfor %}
-    </div>
-    <button class="card-carousel-prev">❮</button>
-    <button class="card-carousel-next">❯</button>
+      
+    </ul>
   </div>
-{% else if slide_count == 1 %}
-  <div class="card-carousel-single">
-    {% assign project = site.projects[0] %}
-    {% include project_card.html %}
+
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
   </div>
-{% else %}
-  <p>No projects available.</p>
-{% endif %}
+
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+  </div>
+</div>
+
+<script>
+  new Glide('.glide', {
+    animationDuration: 800,
+    type: 'carousel',
+    perView: 1,
+    gap: 18,
+    peek: {
+      before: 200,
+      after: 200
+    },
+    breakpoints: {
+      800: {
+        peek: { before: 60, after: 60 }
+      },
+      500: {
+        peek: { before: 8, after: 8 }
+      }
+    }
+  }).mount();
+</script>
