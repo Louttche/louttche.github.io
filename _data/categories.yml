@@ -1,46 +1,16 @@
+- name: Web
+  description: Frontend and backend development for websites and web applications, including UI, frameworks, and APIs.
+- name: Data
+  description: Data analysis, data science, and data visualization, focusing on extracting insights and presenting information.
+- name: Devops
+  description: DevOps practices, containerization, version control, and automation for efficient software delivery and operations.
+- name: AI/ML
+  description: Artificial intelligence and machine learning, including algorithms, models, and intelligent systems.
 - name: 3D
-  description: Creating and manipulating three-dimensional graphics and environments, often for games or simulations.
-- name: AI
-  description: Creating systems that can perform tasks that typically require human intelligence, such as perception, reasoning, and learning.
-- name: backend
-  description: Server-side development, including logic, databases, APIs, and application architecture.
-- name: collaboration
-  description: Working effectively in teams, sharing code, and managing project workflows.
-- name: containerization
-  description: Packaging applications and their dependencies into containers for consistent deployment across environments, often using Docker.
-- name: data analysis
-  description: Inspecting, cleaning, transforming, and modeling data to discover useful information and support decision-making.
-- name: data science
-  description: Applying scientific methods, algorithms, and systems to extract knowledge and insights from structured and unstructured data.
-- name: data visualization
-  description: Presenting data in graphical or pictorial format to communicate insights clearly and effectively.
-- name: database
-  description: Designing, managing, and querying databases to store and retrieve structured information.
-- name: devops
-  description: Practices and tools for automating and integrating software development and IT operations, including deployment, monitoring, and infrastructure management.
-- name: enterprise
-  description: Developing large-scale, robust, and maintainable applications for business environments.
-- name: framework
-  description: Using reusable software platforms or libraries that provide a foundation for developing applications.
-- name: frontend
-  description: Building user interfaces and client-side functionality for web and mobile applications.
-- name: game development
-  description: Creating interactive games, simulations, and virtual environments using engines like Unity or Unreal Engine.
-- name: machine learning
-  description: Developing algorithms and models that enable computers to learn from and make predictions or decisions based on data.
-- name: mobile development
-  description: Creating applications for mobile devices, such as smartphones and tablets.
-- name: operating systems
-  description: Understanding and working with system software that manages hardware and software resources, such as Linux, Windows, or macOS.
-- name: scripting
-  description: Writing scripts to automate tasks, process data, or manage systems, often using languages like Bash, Python, or JavaScript.
-- name: simulation
-  description: Modeling real-world processes or systems to study their behavior under various conditions.
-- name: typed languages
-  description: Programming languages that enforce type constraints, such as TypeScript, to improve code reliability and maintainability.
-- name: UI
-  description: Designing and implementing user interfaces for applications to ensure usability and a positive user experience.
-- name: version control
-  description: Managing changes to source code and collaborating with others using systems like Git.
-- name: web development
-  description: Designing and developing websites and web applications, covering both frontend and backend technologies.
+  description: 3D graphics, and simulation of real or virtual environments.
+- name: Mobile
+  description: Developing applications for mobile devices and understanding mobile platforms.
+- name: Collaboration
+  description: Teamwork, project workflows, and effective code sharing in software projects.
+- name: Game Development
+  description: Game development, including game engines, interactive design, graphics, and gameplay programming.

@@ -1,12 +1,12 @@
 {% assign slide_count = site.projects | size %}
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
 
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
-      {% for project in site.projects %}
+      {% for project in sorted_projects %}
         <li class="glide__slide">{% include project_card.html %}</li>
       {% endfor %}
-      
     </ul>
   </div>
 
@@ -24,7 +24,6 @@
 
 <script>
   new Glide('.glide', {
-    animationDuration: 800,
     type: 'carousel',
     perView: 1,
     gap: 18,
@@ -33,10 +32,19 @@
       after: 200
     },
     breakpoints: {
-      800: {
+      820: {
+        peek: { before: 160, after: 160 }
+      },
+      750: {
+        peek: { before: 120, after: 120 }
+      },
+      700: {
+        peek: { before: 90, after: 90 }
+      },
+      620: {
         peek: { before: 60, after: 60 }
       },
-      500: {
+      550: {
         peek: { before: 8, after: 8 }
       }
     }
