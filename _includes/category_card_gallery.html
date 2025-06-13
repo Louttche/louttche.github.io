@@ -1,0 +1,9 @@
+{% if site.data.categories != blank %}
+    <div class="card-gallery-grid">
+        {% for category in site.data.categories %}
+        <div class="card-gallery-item">
+            {% include category_card.html %}
+        </div>
+        {% endfor %}
+    </div>
+{% endif %}
