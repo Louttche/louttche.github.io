@@ -2,7 +2,11 @@ $theme-font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-se
 $theme-primary-color: #527f0e;
 $theme-primary-color-light: #5d910b;
 $theme-secondary-color: #93bd20;
+
+// Use in combination > background, border-bottom, box-shadow
 $theme-background-image: url(../images/nav-bg.gif) #353535;
+$theme-border-bottom: 4px solid #434343;
+$theme-box-shadow: 0px 1px 3px rgba(0,0,0,.25);
 
 // Use in combination -> border, background, background-color
 $theme-border: 1px solid #5d910b;

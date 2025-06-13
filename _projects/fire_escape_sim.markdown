@@ -3,6 +3,7 @@
     title: Fire Escape Simulation
     description: |
         Unity project featuring building map editting, fire emergency planning, simulation controls, and risk assessment reports
+    cover_image_path: images/fire_escape_sim/0_main_menu.webp
     image_path: images/fire_escape_sim
     github: https://github.com/Louttche/ProCP-Fire_Simulation
     date: 01-01-2019

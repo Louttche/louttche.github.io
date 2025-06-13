@@ -1,7 +1,8 @@
 .project-card {
-  background: white;
+  background: $theme-background-image;
+  border-bottom: $theme-border-bottom;
+  box-shadow: $theme-box-shadow;
   border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(7, 3, 3, 0.363);
   overflow: hidden;
   transition: transform 0.35s cubic-bezier(.4,2,.6,1);
 }
@@ -31,6 +32,7 @@
   height: 112px;
   object-fit: cover;
   border-radius: 8px;
+  border: 2px solid $theme-secondary-color;
 }
 
 .project-info {
@@ -38,15 +40,15 @@
 }
 
 .project-title {
+  color: white;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #111827;
   margin: 0;
 }
 
 .project-description {
+  color: white;
   font-size: 0.875rem;
-  color: #4B5563;
   margin: 0.25rem 0 0.75rem 0;
 
   display: -webkit-box;
@@ -61,7 +63,7 @@
   align-items: center;
   gap: 0.25rem;
   font-size: 0.75rem;
-  color: #6B7280;
+  color: white;
 }
 
 /* Responsive design */

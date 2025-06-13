@@ -2,7 +2,9 @@
   <div class="project-card">
     <div class="card-header">
       <div class="flex-content-row">
-        <img class="project-image" src="/assets/images/placeholder.webp">
+        {% if project.cover_image_path %}
+          <img class="project-image" src="/assets/{{ project.cover_image_path }}">
+        {% endif %}
         <div class="project-info">
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-description">{{ project.description }}</p>
