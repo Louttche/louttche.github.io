@@ -1,12 +1,12 @@
 {% assign slide_count = site.projects | size %}
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
 
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
-      {% for project in site.projects %}
+      {% for project in sorted_projects %}
         <li class="glide__slide">{% include project_card.html %}</li>
       {% endfor %}
-      
     </ul>
   </div>
 
