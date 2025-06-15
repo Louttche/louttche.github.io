@@ -1,6 +1,7 @@
 - name: Agile
   color: "#0077B6"
   categories: ['collaboration']
+  projects: ['internship', 'graduation_internship']
 - name: SCRUM
   color: "#409716"
   categories: ['collaboration']
@@ -22,6 +23,7 @@
 - name: CSS
   color: "#264DE4"
   categories: ['web']
+  projects: ['web3']
 - name: Docker
   color: "#2496ED"
   categories: ['devops']
@@ -32,13 +34,14 @@
 - name: HTML
   color: "#E44D26"
   categories: ['web']
-  projects: ['graduation_internship']
+  projects: ['graduation_internship', 'web3']
 - name: Java
   color: "#28527A"
   categories: ['mobile']
 - name: JavaScript
   color: "#B8860B"
   categories: ['web']
+  projects: ['web3']
 - name: Jupyter Notebook
   color: "#3E4E88"
   categories: ['data', 'ai/ml']
@@ -49,16 +52,17 @@
 - name: Node.js
   color: "#14532D"
   categories: ['web']
-  projects: ['graduation_internship', 'internship']
+  projects: ['graduation_internship', 'internship', 'web3']
 - name: PHP
   color: "#4B3869"
   categories: ['web']
+  projects: ['web3']
 - name: PostgreSQL
   color: "#274472"
-  categories: ['data', 'web']
+  categories: ['data']
 - name: Python
   color: "#B9770E"
-  categories: ['data', 'ai/ml']
+  categories: ['ai/ml']
   projects: ['internship', 'graduation_internship']
 - name: PyTorch
   color: "#EE4C2C"
@@ -72,13 +76,14 @@
 - name: Ruby on Rails
   color: "#C0392B"
   categories: ['web']
-- name: SQL
+- name: mySQL
   color: "#1D3557"
-  categories: ['data', 'web']
+  categories: ['data']
+  projects: ['web3']
 - name: TensorFlow
   color: "#2EC4B6"
   projects: ['internship']
-  categories: ['ai/ml', 'data']
+  categories: ['ai/ml']
 - name: TypeScript
   color: "#1565C0"
   categories: ['web']
@@ -93,3 +98,7 @@
 - name: MATLAB
   color: "#E16737"
   categories: ['data', 'ai/ml']
+- name: Laravel
+  color: "#FF0000"
+  categories: ['web']
+  projects: ['web3']

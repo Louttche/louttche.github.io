@@ -1,11 +1,12 @@
 {% assign slide_count = image_list | size %}
 
-{% if slide_count > 1 %}
+{% if image_list != empty %}
+  {% if slide_count > 1 %}
   <div class="carousel">
     <div class="carousel-inner">
       {% for image in image_list %}
         <div class="carousel-item">
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="Project Image" />
+          <img src="{{ site.baseurl }}{{ image.path }}" />
         </div>
       {% endfor %}
     </div>
@@ -17,6 +18,7 @@
       {% endfor %}
     </div>
   </div>
-{% else if slide_count == 1 %}
-  <img src="{{ site.baseurl }}{{ image_list[0].path }}" alt="Project Image" />
+  {% else %}
+    <img class="carousel carousel-inner" src="{{ site.baseurl }}{{ image_list[0].path }}" />
+  {% endif %}
 {% endif %}
