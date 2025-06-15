@@ -1,9 +1,9 @@
 ---
     layout: project
-    title: Web 3 - University course
+    title: Web 3 - University project
     description: Collaborative university project building a full-stack Laravel web app.
-    image_path: images/temp
     github: 'https://github.com/Louttche/WEB3'
+    date: 01-01-2020
 ---
 
 ### About this project
