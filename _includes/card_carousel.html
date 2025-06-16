@@ -16,11 +16,11 @@
   </div>
 
   <div class="glide__bullets" data-glide-el="controls[nav]">
-    <button class="glide__bullet" data-glide-dir="=0"></button>
-    <button class="glide__bullet" data-glide-dir="=1"></button>
-    <button class="glide__bullet" data-glide-dir="=2"></button>
+    {% for slide_index in (1..slide_count) %}
+      {% assign index = '=' | append: slide_index | minus: 1 %}
+      <button class="glide__bullet" data-glide-dir={{ index }}></button>
+    {% endfor %}
   </div>
-</div>
 
 <script>
   new Glide('.glide', {
