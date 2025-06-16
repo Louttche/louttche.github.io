@@ -1,26 +1,35 @@
 {% assign slide_count = image_list | size %}
 
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      {% for image in image_list %}
-        <li class="glide__slide"><img src="{{ site.baseurl }}{{ image.path }}" /></li>
-      {% endfor %}
-      
-    </ul>
-  </div>
+{% if image_list != empty %}
+  {% if slide_count > 1 %}
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          {% for image in image_list %}
+            <li class="glide__slide">
+              <img src="{{ site.baseurl }}{{ image.path }}" />
+              {{ image.basename | replace: '_', ' ' | capitalize }}
+            </li>
+          {% endfor %} 
+        </ul>
+      </div>
 
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
-  </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
+      </div>
 
-  <div class="glide__bullets" data-glide-el="controls[nav]">
-    <button class="glide__bullet" data-glide-dir="=0"></button>
-    <button class="glide__bullet" data-glide-dir="=1"></button>
-    <button class="glide__bullet" data-glide-dir="=2"></button>
-  </div>
-</div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        {% for slide_index in (1..slide_count) %}
+          {% assign index = '=' | append: slide_index | minus: 1 %}
+          <button class="glide__bullet" data-glide-dir={{ index }}></button>
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    <img class="carousel carousel-inner" src="{{ site.baseurl }}{{ image_list[0].path }}" />
+  {% endif %}
+{% endif %}
 
 <script>
   new Glide('.glide', {
