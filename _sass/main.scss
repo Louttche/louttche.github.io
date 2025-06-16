@@ -1,3 +1,4 @@
+@import "../assets/css/navigation.scss";
 @import "../assets/css/image_gallery.scss";
 @import "../assets/css/card_gallery.scss";
 @import "../assets/css/image_carousel.scss";
@@ -150,7 +151,6 @@ section {
   max-width: 100%;
   flex: 1 0 auto;
 
-  // Ensure we can use the whole viewport if needed
   #title {
     margin: 0 auto;
     max-width: 40em;
