@@ -4,7 +4,7 @@
     description: Graduation Internship
     cover_image_path: images/graduation/crisp-dm.wepb
     image_path: images/graduation
-    date: 01-06-2022
+    start_date: 01-06-2022
     end_date: 01-02-2023
 ---
 

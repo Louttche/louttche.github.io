@@ -1,5 +1,5 @@
 {% if site.projects != blank %}
-    {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+    {% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
     <div class="card-gallery-grid">
         {% for project in sorted_projects %}
         <div class="card-gallery-item">

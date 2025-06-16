@@ -3,7 +3,7 @@
     title: Web 3 - University project
     description: Collaborative university project building a full-stack Laravel web app.
     github: 'https://github.com/Louttche/WEB3'
-    date: 01-01-2020
+    start_date: 01-01-2020
 ---
 
 ### About this project
