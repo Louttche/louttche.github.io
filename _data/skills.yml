@@ -23,7 +23,7 @@
 - name: CSS
   color: "#264DE4"
   categories: ['web']
-  projects: ['web3']
+  projects: ['web3', 'ecotopia']
 - name: Docker
   color: "#2496ED"
   categories: ['devops']
@@ -34,7 +34,7 @@
 - name: HTML
   color: "#E44D26"
   categories: ['web']
-  projects: ['graduation_internship', 'web3']
+  projects: ['graduation_internship', 'web3', 'ecotopia']
 - name: Java
   color: "#28527A"
   categories: ['mobile']
@@ -56,7 +56,7 @@
 - name: PHP
   color: "#4B3869"
   categories: ['web']
-  projects: ['web3']
+  projects: ['web3', 'ecotopia']
 - name: PostgreSQL
   color: "#274472"
   categories: ['data']
@@ -79,7 +79,7 @@
 - name: mySQL
   color: "#1D3557"
   categories: ['data']
-  projects: ['web3']
+  projects: ['web3', 'ecotopia']
 - name: TensorFlow
   color: "#2EC4B6"
   projects: ['internship']
@@ -101,4 +101,4 @@
 - name: Laravel
   color: "#FF0000"
   categories: ['web']
-  projects: ['web3']
+  projects: ['web3', 'ecotopia']
