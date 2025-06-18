@@ -8,6 +8,7 @@
 - name: Android Studio
   color: "#21825C"
   categories: ['mobile']
+  projects: ['stalkr']
 - name: Bash
   color: "#357A38"
   categories: ['devops']
@@ -49,6 +50,7 @@
 - name: Kotlin
   color: "#5F3DC4"
   categories: ['mobile']
+  projects: ['stalkr']
 - name: Node.js
   color: "#14532D"
   categories: ['web']
