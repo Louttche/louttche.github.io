@@ -4,7 +4,7 @@
     description: Android Studio university group project in Kotlin making use of Firebase auth and Google Maps API services.
     cover_image_path: images/stalkr/logo.png
     image_path: images/stalkr/carousel
-    github: ''
+    github: 'https://github.com/Louttche/ANDR2'
     start_date: 01-01-2021
 ---
 

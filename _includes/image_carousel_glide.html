@@ -6,9 +6,9 @@
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
           {% for image in image_list %}
-            <li class="glide__slide" style="text-align: center; height: auto;">
-              <img height="400px" src="{{ site.baseurl }}{{ image.path }}" />
-              <div>{{ image.basename | replace: '_', ' ' | capitalize }}</div>
+            <li class="glide__slide">
+              <img src="{{ site.baseurl }}{{ image.path }}" />
+              <div class="image-caption">{{ image.basename | replace: '_', ' ' | capitalize }}</div>
             </li>
           {% endfor %} 
         </ul>
@@ -34,7 +34,7 @@
 <script>
   new Glide('.glide', {
     animationDuration: 800,
-    autoplay: 3000,
+
     hoverpause: true,
     type: 'carousel',
     perView: 1,

@@ -18,6 +18,29 @@
     }
 }
 
+.glide__slide {
+  text-align: center;
+  margin: auto 0;
+  height: 620px;
+  max-height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .image-caption {
+    padding-top: 10px;
+  }
+}
+
 .glide__slides {
   padding: 10px 0 !important;
 }

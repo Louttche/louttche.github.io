@@ -51,6 +51,10 @@
   color: "#5F3DC4"
   categories: ['mobile']
   projects: ['stalkr']
+- name: Image Processing
+  color: "#00796B"
+  categories: ['data']
+  projects: ['ipv1', 'ipv2']
 - name: Node.js
   color: "#14532D"
   categories: ['web']
@@ -100,6 +104,7 @@
 - name: MATLAB
   color: "#E16737"
   categories: ['data', 'ai/ml']
+  projects: ['ipv1', 'ipv2']
 - name: Laravel
   color: "#FF0000"
   categories: ['web']
