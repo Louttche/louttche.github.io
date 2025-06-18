@@ -2,8 +2,10 @@
     layout: project
     title: Project Name
     description: Project description
-    image_path: images/temp
+    cover_image_path: images/temp
+    image_path: images/temp/carousel
     github: ''
+    start_date: 01-01-2021
 ---
 
 ### About this project
