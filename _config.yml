@@ -32,7 +32,9 @@ baseurl: ""     # "/louttche.github.io" place folder name if the site is served 
 repository: louttche/louttche.github.io
 # Build settings
 theme: jekyll-theme-midnight
-# plugins:
+
+plugins:
+  - jekyll-analytics
 #   - jekyll-feed
 
 # Collections
@@ -42,6 +44,12 @@ collections:
     permalink: /projects/:slug/
     title: Projects
     description: A collection of my projects.
+
+jekyll_analytics:
+  CounterDotDev:
+    user: 'Louttche'
+    domain: "https://louttche.github.io/"
+    source: "https://cdn.counter.dev/script.js"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
