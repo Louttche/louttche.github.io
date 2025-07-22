@@ -7,6 +7,10 @@
 @import "../assets/css/category_card.scss";
 @import "../assets/css/skills.scss";
 
+:target {
+  scroll-margin-top: 4em;
+}
+
 .about-me-image {
   width: 140px;
   height: 140px;
@@ -42,6 +46,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  h3 {
+    color: $theme-text-primary-color;
+  }
 }
 
 button,
@@ -166,13 +174,18 @@ section {
       margin: 4em auto;
       box-sizing: border-box;
 
-      #content-section-title {
+      .content-section-title {
         margin-top: 0.5em;
         margin-bottom: 2em;
         text-align: center;
+        
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
 
-      #content-section-text {
+      .content-section-text {
         max-width: 900px;
         margin: 0 auto;
         font-size: medium;

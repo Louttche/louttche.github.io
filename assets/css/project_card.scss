@@ -43,14 +43,14 @@
 }
 
 .project-title {
-  color: white;
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
+  text-align: left;
 }
 
 .project-description {
-  color: white;
+  color: $theme-text-secondary-color;
   font-size: 0.875rem;
   margin: 0.25rem 0 0.75rem 0;
 
@@ -59,6 +59,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
 }
 
 .project-date {
@@ -66,7 +67,7 @@
   align-items: center;
   gap: 0.25rem;
   font-size: 0.75rem;
-  color: white;
+  color: $theme-text-secondary-color-dark;
 }
 
 /* Responsive design */
