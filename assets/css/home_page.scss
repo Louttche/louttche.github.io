@@ -1,0 +1,37 @@
+.about-me-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 1.5em 0 0 1.5em;
+}
+
+.about-me-paragraph {
+  display: flex;
+  align-items: center;
+  background-color: #0000003a;
+  padding: 10px 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+}
+
+.about-me-paragraph.light {
+  background-color: #597c00c9;
+}
+
+#about-me-content {
+  padding: 25px 40px;
+  background-color: $theme-background-color-dark-gray;
+  height: 410px;
+  max-height: 410px;
+  overflow: auto;
+}
+
+.about-me-contact {
+  max-height: 460px;
+  overflow: auto;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
+}

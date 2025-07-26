@@ -49,6 +49,7 @@
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  padding: 5px 0;
 }
 
 .glide__bullet {
@@ -56,6 +57,7 @@
   height: 1em;
   padding: 0;
   border-radius: 50%;
+  background: $theme-background-color;
   margin: 0 5px;
   cursor: pointer;
   transition: background 0.3s;
@@ -63,4 +65,10 @@
 
 .glide__bullet--active {
   background: #06290f;
+  border: 2.5px solid $theme-primary-color
+}
+
+.glide__track-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
 }
