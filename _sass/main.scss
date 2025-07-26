@@ -39,7 +39,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font: $theme-font;
   font-family: $theme-font-family;
+  
+  h1, h2, h3, p {
+    font-family: $theme-font-family !important;
+  }
 }
 
 body {
