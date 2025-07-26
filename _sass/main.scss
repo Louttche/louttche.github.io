@@ -16,6 +16,16 @@
   height: 140px;
   border-radius: 50%;
   border: 2px solid white;
+  margin: 1.5em 0 0 1.5em;
+}
+
+.about-me-paragraph {
+  display: flex;
+  align-items: center;
+  background-color: #00000057;
+  padding: 16px 16px 16px 16px;
+  margin: 16px 0;
+  border-radius: 8px;
 }
 
 .background-image {
@@ -44,6 +54,14 @@ html, body {
   
   h1, h2, h3, p {
     font-family: $theme-font-family !important;
+  }
+
+  .paragraph-icon {
+    font-size: 2rem;
+  }
+
+  .paragraph-icon.left {
+    margin-right: 16px;
   }
 }
 
@@ -99,7 +117,7 @@ input[type="submit"] {
 
 footer {
   flex-shrink: 0;
-  height: 100px; // or your preferred height
+  height: 100px;
   width: 100%;
   background: #222;
   position: relative;
@@ -175,8 +193,10 @@ section {
   
   #content {
     .content-section {
-      max-width: 900px;
-      margin: 4em auto;
+      max-width: 80em;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2em 3em;
       box-sizing: border-box;
 
       .content-section-title {
@@ -195,6 +215,19 @@ section {
         margin: 0 auto;
         font-size: medium;
       }
+    }
+
+    .scroll-container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    .content-section.fullscreen-section {
+      min-height: 100vh;
+      height: auto;
+      scroll-snap-align: start;
+      align-items: flex-start;
     }
   }
 }

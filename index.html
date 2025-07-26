@@ -2,25 +2,21 @@
 layout: default
 ---
 
-<div class="content-section" style="margin: 0 auto;">
-    <h2 id="about-me" class="content-section-title"><a href="#about-me">About me</a></h2>
-    <div class="flex-content-row background-image">
-        <img class="about-me-image" src="/assets/images/self.webp">
-        <div class="content-section-text" style="margin-left: 2em;">
-            Hello! I'm a passionate software engineer with experience in building robust web applications and
-            scalable solutions!
-            <br><br>
-            I enjoy solving complex problems, learning new technologies, and collaborating
-            with others to create impactful software. Welcome to my portfolio—feel free to explore my projects
-            and get in touch!
+<div class="scroll-container">
+    <div class="content-section fullscreen-section">
+        <h2 id="about-me" class="content-section-title"><a href="#about-me">About me</a></h2>
+        <div class="background-image">
+            <div class="content-section-text" style="margin-left: 2em; padding: 15px 5px;">
+                {%include about_me.html %}
+            </div>
         </div>
     </div>
-</div>
-<div class="content-section">
-    <h2 id="projects" class="content-section-title"><a href="#projects">Projects</a></h2>
-    {% include card_carousel.html %}
-</div>
-<div class="content-section">
-    <h2 id="skills" class="content-section-title"><a href="#skills">Skills</a></h2>
-    {% include category_card_gallery.html %}
+    <div class="content-section fullscreen-section">
+        <h2 id="projects" class="content-section-title"><a href="#projects">Projects</a></h2>
+        {% include card_carousel.html %}
+    </div>
+    <div class="content-section fullscreen-section" style="max-width: 70em;">
+        <h2 id="skills" class="content-section-title"><a href="#skills">Skills</a></h2>
+        {% include category_card_gallery.html %}
+    </div>
 </div>
