@@ -140,6 +140,8 @@ a {
 
 // One level above '.content'
 section {
+  margin-bottom: 0;
+  padding-bottom: 0;
   padding-top: 0;
   max-width: 100%;
   flex: 1 0 auto;
@@ -189,6 +191,8 @@ section {
       min-height: 100vh;
       height: auto;
       scroll-snap-align: start;
+      scroll-padding-top: 4.3em;
+      // scroll-padding-bottom: 2em;
       align-items: flex-start;
 
       .glide {
