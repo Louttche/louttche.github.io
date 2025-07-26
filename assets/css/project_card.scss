@@ -10,6 +10,10 @@
   height: 350px;
 }
 
+.glide__slide .project-card {
+  background: $theme-color-dark;
+}
+
 .project-card-link:hover .project-card,
 .project-card-link:focus .project-card,
 .project-card-link:active .project-card {
