@@ -19,6 +19,9 @@
 }
 
 .card-header {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem 1.5rem 1rem 1.5rem;
 }
 
@@ -35,25 +38,30 @@
   width: auto;
   max-width: 200px;
   height: auto;
-  max-height: 100px;
+  max-height: 180px;
   object-fit: contain;
+}
+
+.project-image-container {
   border-radius: 8px;
   background-color: $theme-background-color-dark;
-  border: 2px solid $theme-secondary-color;
+  box-shadow: -8px 8px 8px #2121217e;
 }
 
 .project-info {
   flex: 1;
+  align-self: flex-start;
 }
 
 .project-title {
   margin: 0;
   text-align: left;
+  font-size: 1.5em;
 }
 
 .project-description {
-  color: $theme-text-secondary-color;
-  font-size: 0.875rem;
+  color: white;
+  font-size: 1em;
   margin: 0.25rem 0 0.75rem 0;
 
   display: -webkit-box;
@@ -70,6 +78,23 @@
   gap: 0.25rem;
   font-size: 0.75rem;
   color: $theme-text-secondary-color-dark;
+}
+
+.flex-content-row {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.vertical-divider {
+  width: 0.8px;
+  height: 100%;
+  background: $theme-secondary-color;
+  margin: 0 1rem;
+  border-radius: 1px;
 }
 
 /* Responsive design */

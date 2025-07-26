@@ -3,6 +3,7 @@
 @import "../assets/css/card_gallery.scss";
 @import "../assets/css/image_carousel.scss";
 @import "../assets/css/card_carousel.scss";
+@import "../assets/css/home_page.scss";
 @import "../assets/css/project_card.scss";
 @import "../assets/css/category_card.scss";
 @import "../assets/css/skills.scss";
@@ -11,42 +12,12 @@
   scroll-margin-top: 4em;
 }
 
-.about-me-image {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 2px solid white;
-  margin: 1.5em 0 0 1.5em;
-}
-
-.about-me-paragraph {
-  display: flex;
-  align-items: center;
-  background-color: #00000057;
-  padding: 16px 16px 16px 16px;
-  margin: 16px 0;
-  border-radius: 8px;
-}
-
-.background-image {
-  border-radius: 5px;
-  background: $theme-background-image;
-  padding: 20px;
-  border-bottom: $theme-border-bottom;
-  box-shadow: $theme-box-shadow;
-}
-
-.flex-content-row {
-  display: flex;
-  gap: 1rem;
-}
-
-.hpfield {
-  display: none;
-}
-
 html, body {
+  color: white;
+  min-height: 100vh;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font: $theme-font;
@@ -56,22 +27,21 @@ html, body {
     font-family: $theme-font-family !important;
   }
 
+  h3 {
+    color: $theme-text-primary-color;
+  }
+
   .paragraph-icon {
     font-size: 2rem;
+    align-self: flex-start;
   }
 
   .paragraph-icon.left {
     margin-right: 16px;
   }
-}
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  h3 {
-    color: $theme-text-primary-color;
+  .paragraph-icon.right {
+    margin-left: 16px;
   }
 }
 
@@ -103,6 +73,18 @@ input[type="submit"] {
   }
 }
 
+.background-image {
+  border-radius: 5px;
+  background: $theme-background-image;
+  padding: 20px;
+  border-bottom: $theme-border-bottom;
+  box-shadow: $theme-box-shadow;
+}
+
+.hpfield {
+  display: none;
+}
+
 .external-link {
   color: rgb(41, 56, 35) !important;
   align-self: flex-end;
@@ -113,27 +95,6 @@ input[type="submit"] {
   background-color: rgba(46, 43, 43, 0.26);
   border-radius: 30%;
   padding: 3px 2px 0 3px;
-}
-
-footer {
-  flex-shrink: 0;
-  height: 100px;
-  width: 100%;
-  background: #222;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-  box-sizing: border-box;
-
-  .credits {
-    color: #696969;
-    font-size: 11px;
-    font-weight: normal;
-    margin-top: -10px;
-    padding: 0 10px;
-  }
 }
 
 input[type=text], input[type=email], select, textarea {
@@ -179,6 +140,7 @@ a {
 
 // One level above '.content'
 section {
+  padding-top: 0;
   max-width: 100%;
   flex: 1 0 auto;
 
@@ -220,7 +182,7 @@ section {
     .scroll-container {
       height: 100vh;
       overflow-y: scroll;
-      scroll-snap-type: y mandatory;
+      scroll-snap-type: y proximity;
     }
 
     .content-section.fullscreen-section {
