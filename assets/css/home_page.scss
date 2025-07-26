@@ -28,6 +28,9 @@
 }
 
 .about-me-contact {
+  max-height: 460px;
+  overflow: auto;
+
   @media (max-width: 950px) {
     display: none;
   }
