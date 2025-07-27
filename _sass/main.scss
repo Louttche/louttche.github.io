@@ -182,16 +182,17 @@ section {
     }
 
     .scroll-container {
+      width: 100vw;
       height: 100vh;
       overflow-y: scroll;
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      // -ms-overflow-style: none;  /* IE and Edge */
+      // scrollbar-width: none;  /* Firefox */
       scroll-snap-type: y mandatory;
     }
 
-    .scroll-container::-webkit-scrollbar {
-      display: none; // Chrome, Safari and Opera
-    }
+    // .scroll-container::-webkit-scrollbar {
+    //   display: none; // Chrome, Safari and Opera
+    // }
 
     .content-section.fullscreen-section {
       padding-top: $header-height + 2em;
