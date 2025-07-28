@@ -195,6 +195,10 @@ section {
     // }
 
     .content-section.fullscreen-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
       padding-top: $header-height + 2em;
       min-height: 100vh;
       height: auto;
