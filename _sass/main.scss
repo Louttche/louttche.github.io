@@ -34,13 +34,11 @@ html, body {
   .paragraph-icon {
     font-size: 2rem;
     align-self: flex-start;
-  }
-
-  .paragraph-icon.left {
     margin-right: 16px;
   }
 
   .paragraph-icon.right {
+    margin-right: 0;
     margin-left: 16px;
   }
 }
@@ -108,11 +106,6 @@ input[type=text], input[type=email], select, textarea {
   resize: vertical;
 }
 
-ul {
-  // overwrite theme's icon (ugly double arrows)
-  list-style-image: none;
-}
-
 a {
   &.button {
     color: white;
@@ -138,6 +131,11 @@ a {
   }
 }
 
+hr {
+  margin: 2em auto;
+  max-width: 60em;
+}
+
 // One level above '.content'
 section {
   margin: 0 auto;
@@ -145,6 +143,10 @@ section {
   padding-top: 0;
   max-width: 100%;
   flex: 1 0 auto;
+
+  &.with-padding {
+    padding-top: 6em;
+  }
 
   #title {
     margin: 0 auto;
@@ -157,7 +159,6 @@ section {
   
   #content {
     .content-section {
-      max-width: 80em;
       width: 100%;
       margin: 0 auto;
       padding: 2em 3em;
@@ -174,10 +175,8 @@ section {
         }
       }
 
-      .content-section-text {
-        max-width: 900px;
-        margin: 0 auto;
-        font-size: medium;
+      @media (max-height: 950px) {
+        padding: 2em 20px;
       }
     }
 
@@ -185,45 +184,77 @@ section {
       width: 100vw;
       height: 100vh;
       overflow-y: scroll;
-      // -ms-overflow-style: none;  /* IE and Edge */
-      // scrollbar-width: none;  /* Firefox */
+
       scroll-snap-type: y mandatory;
     }
-
-    // .scroll-container::-webkit-scrollbar {
-    //   display: none; // Chrome, Safari and Opera
-    // }
 
     .content-section.fullscreen-section {
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      padding-top: $header-height + 2em;
+      padding-top: 4em;
       min-height: 100vh;
       height: auto;
       scroll-snap-align: center;
       scroll-snap-stop: always;
 
       .glide {
-        background: linear-gradient(90deg, rgba(42, 123, 155, 0.5) 0%, rgba(255, 255, 255, 0.8) 50%, rgb(212, 255, 95) 100%);
-        border-radius: 3%;
+        height: 70vh;
+        background: $background-colorful;
         padding: 40px 0;
+
+        .glide__track-container {
+          height: 80%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+
+          .glide__track {
+            height: 85%;
+            .glide__slides {
+              height: 100%;
+              display: flex;
+              align-items: center;
+
+              .glide__slide {
+                height: 80%;
+                margin-top: 0;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
-section.with-padding {
-  padding-top: $header-height + 2em;
+ul {
+  // overwrite theme's icon (ugly double arrows)
+  list-style-image: none;
+}
+
+.flex-content-row {
+  display: flex;
+  flex: 1 1 auto;
+  height: 20%;
+  align-items: flex-start;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari and Opera
+  }
 }
 
 .scrollable-content {
   max-height: 60vh;
   overflow-y: scroll;
-}
-
-hr {
-  margin: 2em auto;
-  max-width: 60em;
 }
