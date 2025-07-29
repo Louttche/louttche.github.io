@@ -10,22 +10,21 @@
         {% endfor %}
       </ul>
     </div>
-    <div class="glide__bullets" data-glide-el="controls[nav]">
-      {% for slide_index in (1..slide_count) %}
-        <button class="glide__bullet" data-glide-dir="={{ slide_index | minus: 1 }}"></button>
-      {% endfor %}
+    <div class="glide__arrows slides-navigation" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        {% for slide_index in (1..slide_count) %}
+          <button class="glide__bullet" data-glide-dir="={{ slide_index | minus: 1 }}"></button>
+        {% endfor %}
+      </div>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
     </div>
-  </div>
-
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
   </div>
 </div>
 <script>
   new Glide('.glide', {
-    // autoplay: 3000,
-    // hoverpause: true,
+    autoplay: 3000,
+    hoverpause: true,
     type: 'carousel',
     perView: 4,
     gap: 18,

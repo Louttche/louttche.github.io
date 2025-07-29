@@ -1,21 +1,22 @@
+.glide__arrows.slides-navigation {
+  display: flex;
+  justify-content: center;
+
+  .glide__arrow--left {
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .glide__arrow--right {
+    position: relative;
+    margin-left: 10px;
+  }
+}
+
 .glide__arrows {
     color: white;
     border: none;
     z-index: 10;
-
-    .glide__arrow--left {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .glide__arrow--right {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
 }
 
 .glide__slide {
@@ -48,6 +49,7 @@
   justify-content: center;
   margin-top: 1rem;
   padding: 5px 0;
+  flex-wrap: wrap;
 }
 
 .glide__bullet {
@@ -56,7 +58,7 @@
   padding: 0;
   border-radius: 50%;
   background: $theme-background-color;
-  margin: 0 5px;
+  margin: 2px 5px;
   cursor: pointer;
   transition: background 0.3s;
 }
