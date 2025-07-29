@@ -131,11 +131,6 @@ a {
   }
 }
 
-hr {
-  margin: 2rem 0;
-  max-width: 60em;
-}
-
 // One level above '.content'
 section {
   margin: 0 auto;
@@ -165,8 +160,7 @@ section {
       box-sizing: border-box;
 
       .content-section-title {
-        margin-top: 0.5em;
-        margin-bottom: 2em;
+        margin: 1em 0;
         text-align: center;
         
         a {
