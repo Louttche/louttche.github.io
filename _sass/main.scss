@@ -1,8 +1,7 @@
 @import "../assets/css/navigation.scss";
 @import "../assets/css/image_gallery.scss";
 @import "../assets/css/card_gallery.scss";
-@import "../assets/css/image_carousel.scss";
-@import "../assets/css/card_carousel.scss";
+@import "../assets/css/carousel.scss";
 @import "../assets/css/home_page.scss";
 @import "../assets/css/project_card.scss";
 @import "../assets/css/category_card.scss";
@@ -182,40 +181,49 @@ section {
       scroll-snap-type: y mandatory;
     }
 
-    .content-section.fullscreen-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .content-section {
+      &:not(.fullscreen-section) {
+        .glide {
+          background: $background-colorful;
+          padding: 40px 0;
+        }
+      }
 
-      padding-top: 4em;
-      min-height: 100vh;
-      height: auto;
-      scroll-snap-align: center;
-      scroll-snap-stop: always;
+      &.fullscreen-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-      .glide {
-        height: 70vh;
-        background: $background-colorful;
-        padding: 40px 0;
+        padding-top: 4em;
+        min-height: 100vh;
+        height: auto;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
 
-        .glide__track-container {
-          height: 80%;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 100%;
+        .glide {
+          height: 70vh;
+          background: $background-colorful;
+          padding: 40px 0;
 
-          .glide__track {
-            height: 85%;
-            .glide__slides {
-              height: 100%;
-              display: flex;
-              align-items: center;
+          .glide__track-container {
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
 
-              .glide__slide {
-                height: 80%;
-                margin-top: 0;
-                margin-bottom: 0;
+            .glide__track {
+              height: 85%;
+              .glide__slides {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .glide__slide {
+                  height: 80%;
+                  margin-top: 0;
+                  margin-bottom: 0;
+                }
               }
             }
           }
