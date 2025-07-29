@@ -34,7 +34,8 @@ html, body {
   .paragraph-icon {
     font-size: 2rem;
     align-self: flex-start;
-    margin-right: 16px;
+    margin: auto 16px;
+    margin-left: 0;
   }
 
   .paragraph-icon.right {
@@ -132,7 +133,7 @@ a {
 }
 
 hr {
-  margin: 2em auto;
+  margin: 2rem 0;
   max-width: 60em;
 }
 

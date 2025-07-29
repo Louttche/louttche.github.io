@@ -1,21 +1,29 @@
 .skills-container {
   display: flex;
   flex: 1 1 auto;
-  min-width: 0;
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem 1.5rem;
   border-top: 1px solid $theme-secondary-color;
 }
 
+.glide__slide .skills-container {
+  // flex-wrap: nowrap; // Issue: scrolls the carousel too.
+  @media screen and (max-height: 765px),
+    screen and (max-width: 480px) {
+    max-height: 90px;
+    overflow-y: scroll;
+  }
+}
+
 .skill-badge {
   display: inline-block;
   padding: 0.25rem 0.5rem;
-  font-size: 18px;
   background-color: $theme-secondary-color;
   color: white;
   border-radius: 6px;
   transition: background-color 0.2s ease;
+  align-content: center;
 }
 
 .skill-badge:hover {
