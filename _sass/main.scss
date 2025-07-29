@@ -183,9 +183,20 @@ section {
 
     .content-section {
       &:not(.fullscreen-section) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .carousel.carousel-inner {
+          width: 60%;
+          margin: 0 auto;
+        }
+
         .glide {
           background: $background-colorful;
           padding: 40px 0;
+          max-width: 60%;
+          margin: 0 auto;
         }
       }
 
