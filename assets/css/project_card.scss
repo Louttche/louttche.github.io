@@ -91,6 +91,15 @@
   background: $theme-color-dark;
 }
 
+.card-gallery-item .project-card {
+  hr {
+    background: $theme-text-secondary-color-dark;
+    width: 80%;
+    height: 1px;
+    margin: 10px auto;
+  }
+}
+
 .project-card-link {
   color: white;
   height: 100%;
