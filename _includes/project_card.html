@@ -1,28 +1,26 @@
 <a href="{{ project.url }}" class="project-card-link">
   <div class="project-card">
     <div class="card-header">
-      <div class="flex-content-row">
+      <h3 class="project-title">{{ project.title }}</h3>
+      <div class="project-date">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span>
+          {{ project.start_date | date: '%Y' }}{% if project.end_date %} - {{ project.end_date | date: '%Y' }}{% endif %}
+        </span>
+      </div>
+      <hr>
+      <div class="project-content flex-content-row">
         {% if project.cover_image_path %}
           <div class="project-image-container">
             <img class="project-image" src="/assets/{{ project.cover_image_path }}">
           </div>
         {% endif %}
-        <div class="vertical-divider"></div>
-        <div class="project-info">
-          <h3 class="project-title">{{ project.title }}</h3>
-          <p class="project-description">{{ project.description }}</p>
-          <div class="project-date">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-            <span>
-              {{ project.start_date | date: '%Y' }}{% if project.end_date %} - {{ project.end_date | date: '%Y' }}{% endif %}
-            </span>
-          </div>
-        </div>
+        <p class="project-description">{{ project.description }}</p>
       </div>
     </div>
     <div class="card-footer">
