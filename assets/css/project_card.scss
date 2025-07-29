@@ -39,13 +39,11 @@
 
       .project-image-container {
         width: 10%;
-        height: 100%;
         min-width: 200px;
         border-radius: 8px;
         align-content: start;
 
         .project-image {
-          height: auto;
           max-height: 100%;
           object-fit: contain;
           background-color: $theme-background-color-dark;
