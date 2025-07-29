@@ -153,7 +153,7 @@ section {
   
   #content {
     .content-section {
-      width: 80%;
+      width: 85%;
       margin: 0 auto;
       padding: 2em 3em;
       box-sizing: border-box;
@@ -168,8 +168,11 @@ section {
         }
       }
 
-      @media (max-height: 950px) {
+      @media screen and (max-height: 950px) {
         padding: 2em 20px;
+      }
+      @media screen and (max-width: 950px) {
+        width: 100%;
       }
     }
 
@@ -183,9 +186,20 @@ section {
 
     .content-section {
       &:not(.fullscreen-section) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .carousel.carousel-inner {
+          width: 60%;
+          margin: 0 auto;
+        }
+
         .glide {
           background: $background-colorful;
           padding: 40px 0;
+          max-width: 60%;
+          margin: 0 auto;
         }
       }
 
