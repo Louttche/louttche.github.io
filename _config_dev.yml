@@ -1,0 +1,17 @@
+domain: louttche.github.io
+base_url: ""
+
+# Build settings
+theme: jekyll-theme-midnight
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/
+    title: Projects
+    description: A collection of my projects.
+
+exclude:
+  - _projects/project_template.markdown
+  - local_assets

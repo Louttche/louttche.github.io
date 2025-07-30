@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ "/assets/css/styles.css" }}">
 
     <!-- Include JavaScript -->
     <script src="/assets/js/main.js"></script>
@@ -19,28 +19,6 @@
   </head>
 
   <body>
-    <style type="text/css" media="screen">
-      .container {
-        margin: 10px auto;
-        max-width: 600px;
-        text-align: center;
-      }
-      h1 {
-        margin: 30px 0;
-        font-size: 4em;
-        line-height: 1;
-        letter-spacing: -1px;
-      }
-    </style>
-    <div class="container">
-      <h1>Down for maintenance</h1>
-
-      <p><strong>Thank you for visiting my portfolio! Unfortunately it is not up right now... :(</strong></p>
-      <p>Please wait and try again later or contact me <a href="mailto:louttche@proton.me">here</a></p>
-    </div>
-  </body>
-
-  {% comment %} <body>
     <div id="header">
       {% include navigation.html %}
     </div>
@@ -61,5 +39,5 @@
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-  </body> {% endcomment %}
+  </body>
 </html>
