@@ -27,7 +27,7 @@ email: louttche@proton.me
 domain: louttche.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://louttche.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/louttche.github.io"
+baseurl: ""
 # github_username:  louttche
 repository: louttche/louttche.github.io
 # Build settings

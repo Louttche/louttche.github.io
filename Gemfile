@@ -15,7 +15,7 @@ gem 'jekyll-theme-midnight', '~> 0.2.0'
 gem "github-pages", "~> 232", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-analytics"
+  gem 'jekyll-analytics', '~> 0.1.14'
   # gem "jekyll-feed", "~> 0.12"
 end
 
