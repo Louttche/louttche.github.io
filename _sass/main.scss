@@ -140,6 +140,7 @@ section {
 
   &.with-padding {
     padding-top: 6em;
+    margin: 0;
   }
 
   #title {
@@ -153,43 +154,16 @@ section {
   
   #content {
     .content-section {
-      width: 85%;
+      width: 100%;
       margin: 0 auto;
       padding: 2em 3em;
       box-sizing: border-box;
 
-      .content-section-title {
-        margin: 1em 0;
-        text-align: center;
-        
-        a {
-          text-decoration: none;
-          color: inherit;
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-      @media screen and (max-height: 950px) {
-        padding: 2em 20px;
-      }
-      @media screen and (max-width: 950px) {
-        width: 100%;
-      }
-    }
-
-    .scroll-container {
-      width: 100vw;
-      height: 100vh;
-      overflow-y: scroll;
-
-      scroll-snap-type: y mandatory;
-    }
-
-    .content-section {
       &:not(.fullscreen-section) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
         .carousel.carousel-inner {
           width: 60%;
           margin: 0 auto;
@@ -204,11 +178,6 @@ section {
       }
 
       &.fullscreen-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        padding-top: 4em;
         min-height: 100vh;
         height: auto;
         scroll-snap-align: center;
@@ -243,6 +212,24 @@ section {
           }
         }
       }
+
+      .content-section-title {
+        margin: 1em 0;
+        text-align: center;
+        
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+
+    .scroll-container {
+      width: 100vw;
+      height: 100vh;
+      overflow-y: scroll;
+
+      scroll-snap-type: y mandatory;
     }
   }
 }
@@ -277,4 +264,5 @@ ul {
 
 #contact-form {
   padding: 20px;
+  height: 91%;
 }

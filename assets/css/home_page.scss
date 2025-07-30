@@ -1,6 +1,15 @@
 .about-me-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  // grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); // See "Cards Grid" at: https://ishadeed.com/article/css-grid-minmax/
+  // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  // grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(auto, 70ch) minmax(1rem, 1fr);
+
   gap: 0.5em;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+  }
 
   #about-me-content {
     padding: 25px 40px;
@@ -9,6 +18,7 @@
     justify-content: center;
     display: grid;
     min-height: fit-content;
+    max-height: 934px;
 
     .about-me-image {
       width: 140px;
@@ -33,22 +43,16 @@
     }
   }
 
-  .about-me-contact {
-    overflow: auto;
+  #about-me-contact {
+    overflow: hidden;
     font-size: 18px;
   }
 
-  @media (max-width: 950px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-
-    max-height: 80vh;
-  }
-
-  @media (max-height: 950px) {
-    .about-me-contact {
-      display: none;
-    }
-  }
+  // Hide contact when width and height is small
+  // @media screen and (max-width: 950px),
+  //   screen and (min-height: 1085px) {
+  //     .about-me-contact {
+  //       display: none;
+  //     }
+  // }
 }
