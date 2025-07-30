@@ -1,11 +1,26 @@
+@import "../assets/css/home_page.scss";
+@import "../assets/css/project_page.scss";
+
 @import "../assets/css/navigation.scss";
 @import "../assets/css/image_gallery.scss";
 @import "../assets/css/card_gallery.scss";
 @import "../assets/css/carousel.scss";
-@import "../assets/css/home_page.scss";
 @import "../assets/css/project_card.scss";
 @import "../assets/css/category_card.scss";
 @import "../assets/css/skills.scss";
+
+/* @link https://utopia.fyi/type/calculator?c=360,21,1.25,1240,23,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.809rem, 0.8527rem + -0.0564vw, 0.84rem);
+  --step--1: clamp(1.05rem, 1.0384rem + 0.0516vw, 1.0784rem);
+  --step-0: clamp(1.3125rem, 1.2614rem + 0.2273vw, 1.4375rem);
+  --step-1: clamp(1.6406rem, 1.5279rem + 0.501vw, 1.9162rem);
+  --step-2: clamp(2.0508rem, 1.8448rem + 0.9154vw, 2.5543rem);
+  --step-3: clamp(2.5635rem, 2.2193rem + 1.5298vw, 3.4049rem);
+  --step-4: clamp(3.2043rem, 2.6585rem + 2.426vw, 4.5387rem);
+  --step-5: clamp(4.0054rem, 3.169rem + 3.7175vw, 6.05rem);
+}
 
 :target {
   scroll-margin-top: 4em;
@@ -21,7 +36,32 @@ html, body {
   padding: 0;
   font: $theme-font;
   font-family: $theme-font-family;
-  
+
+  h1 {
+    font-size: var(--step-4);
+    line-height: $line-break-h1;
+  }
+
+  h2 {
+    font-size: var(--step-3);
+    line-height: $line-break-h2;
+  }
+
+  h3 {
+    font-size: var(--step-2);
+    line-height: $line-break-h3;
+  }
+
+  h4 {
+    font-size: var(--step-1);
+    line-height: $line-break-h4;
+  }
+
+  p, ul {
+    font-size: var(--step-0);
+    line-height: $line-break-p;
+  }
+
   h1, h2, h3, p {
     font-family: $theme-font-family !important;
   }
@@ -53,7 +93,6 @@ input[type="submit"] {
   border-radius: 2px;
   box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
   color: white;
-  font-size: 14px;
   font-weight: normal;
   line-height: 50px;
   line-height:14px;
@@ -103,6 +142,7 @@ input[type=text], input[type=email], select, textarea {
   padding: 12px;
   width: 100%;
   resize: vertical;
+  font-size: var(--step-0);
 }
 
 a {
@@ -115,7 +155,6 @@ a {
     
     padding: 10px 12px;
     line-height:14px;
-    font-size:14px;
     margin: 6px auto;
     display: block;
     text-align:center;
@@ -139,16 +178,21 @@ section {
   flex: 1 0 auto;
 
   &.with-padding {
-    padding-top: 6em;
+    padding-top: $header-height + 4em;
     margin: 0;
   }
 
   #title {
     margin: 0 auto;
-    max-width: 40em;
+    max-width: 70%;
 
     h1 {
-      line-height: 55px;
+      font-size: var(--step-4);
+      line-height: $line-break-h1;
+    }
+
+    p {
+      font-size: var(--step-1);
     }
   }
   
@@ -168,23 +212,17 @@ section {
           width: 60%;
           margin: 0 auto;
         }
-
-        .glide {
-          background: $background-colorful;
-          padding: 40px 0;
-          max-width: 60%;
-          margin: 0 auto;
-        }
       }
 
       &.fullscreen-section {
+        max-width: 75%;
         min-height: 100vh;
         height: auto;
         scroll-snap-align: center;
         scroll-snap-stop: always;
 
         .glide {
-          height: 70vh;
+          height: 60vh;
           background: $background-colorful;
           padding: 40px 0;
 
@@ -211,6 +249,10 @@ section {
             }
           }
         }
+
+        @media (max-width: 500px) {
+          max-width: 95%;
+        }
       }
 
       .content-section-title {
@@ -221,6 +263,10 @@ section {
           text-decoration: none;
           color: inherit;
         }
+      }
+
+      @media (max-width: 500px) {
+        padding: 2em 1em;
       }
     }
 

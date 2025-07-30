@@ -4,17 +4,19 @@ layout: default
 
 <div class="scroll-container">
     <div class="content-section fullscreen-section">
-        <h1 id="about-me" class="content-section-title"><a href="#about-me">About me</a></h1>
+        <h2 id="about-me" class="content-section-title"><a href="#about-me">About me</a></h2>
         <hr>
         {%include about_me.html %}
     </div>
     <div class="content-section fullscreen-section">
-        <h1 id="projects" class="content-section-title"><a href="#projects">Projects</a></h1>
-        <hr>
-        {% include card_carousel.html %}
+        <div id="projects">
+            <h2 class="content-section-title"><a href="#projects">Projects</a></h2>
+            <hr>
+            {% include card_carousel.html %}
+        </div>
     </div>
     <div class="content-section fullscreen-section">
-        <h1 id="skills" class="content-section-title"><a href="#skills">Skills</a></h1>
+        <h2 id="skills" class="content-section-title"><a href="#skills">Skills</a></h2>
         <hr>
         <div class="scrollable-content">
             {% include category_card_gallery.html %}

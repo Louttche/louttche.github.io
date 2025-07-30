@@ -1,0 +1,24 @@
+:root {
+    --page-max-width: 80%;
+}
+
+#project-image-carousel {
+    .glide {
+        background: $background-colorful;
+        padding: 40px 0;
+        max-width: var(--page-max-width);
+        margin: 0 auto;
+
+        @media (max-width: 950px) {
+            max-width: 100%;
+        }
+    }
+}
+
+#project-information {
+    max-width: var(--page-max-width);
+
+    @media (max-width: 950px) {
+        max-width: 100%;
+    }
+}

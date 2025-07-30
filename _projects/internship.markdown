@@ -18,6 +18,7 @@ Additionally, used tensorflow and algorithms or machine learning approaches to c
 Also created a simple python tkinter tool which interacts with the simulator to capture images with lots of configuration. Including sequential images, which makes sure that it takes multiple shots of the same moment, so that each frame is the image for video format type of training.
 
 ### Key Features
+
 - Synthetic data with Unreal Engine and Docker
 - 3D traffic simulation
 - Automated object annotation
