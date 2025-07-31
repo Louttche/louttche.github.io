@@ -1,0 +1,8 @@
+<nav>
+  <ul class="nav-sidebar-menu">
+    {% assign nav_items = site.data.sidebar_navigation %}
+    {% for item in nav_items %}
+      <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

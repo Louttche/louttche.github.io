@@ -9,17 +9,15 @@
 @import "../assets/css/category_card.scss";
 @import "../assets/css/skills.scss";
 
-/* @link https://utopia.fyi/type/calculator?c=360,21,1.25,1240,23,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
 :root {
-  --step--2: clamp(0.809rem, 0.8527rem + -0.0564vw, 0.84rem);
-  --step--1: clamp(1.05rem, 1.0384rem + 0.0516vw, 1.0784rem);
-  --step-0: clamp(1.3125rem, 1.2614rem + 0.2273vw, 1.4375rem);
-  --step-1: clamp(1.6406rem, 1.5279rem + 0.501vw, 1.9162rem);
-  --step-2: clamp(2.0508rem, 1.8448rem + 0.9154vw, 2.5543rem);
-  --step-3: clamp(2.5635rem, 2.2193rem + 1.5298vw, 3.4049rem);
-  --step-4: clamp(3.2043rem, 2.6585rem + 2.426vw, 4.5387rem);
-  --step-5: clamp(4.0054rem, 3.169rem + 3.7175vw, 6.05rem);
+  --step--2: clamp(0.7813rem, 0.7457rem + 0.1578vw, 0.8681rem);
+  --step--1: clamp(0.9375rem, 0.8949rem + 0.1894vw, 1.0417rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2886rem + 0.2727vw, 1.5rem);
+  --step-2: clamp(1.62rem, 1.5464rem + 0.3273vw, 1.8rem);
+  --step-3: clamp(1.944rem, 1.8556rem + 0.3927vw, 2.16rem);
+  --step-4: clamp(2.3328rem, 2.2268rem + 0.4713vw, 2.592rem);
+  --step-5: clamp(2.7994rem, 2.6721rem + 0.5655vw, 3.1104rem);
 }
 
 html, body {

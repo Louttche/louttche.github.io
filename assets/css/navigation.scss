@@ -1,98 +1,36 @@
-#header {
-    nav ul li .active {
-        background: linear-gradient(#749619, #527f0e);
-        background-color: #659e10;
-        border: 1px solid #527f0e;
-        box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
-    }
-}
-
-#header nav {
-  max-width: 90%;
-  background: none;
-
-  ul li a {
-    font-family: $theme-font-family;
-  }
-}
-
-#header #bmicon {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 1.5em;
-  height: 3px;
+nav {
+  min-width: 180px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
+  background: linear-gradient(#93bd20, #659e10);
 
-@media screen and (max-width: 480px) {
-  #header nav {
-    display: block;
-    position: absolute;
-    top: 1.6em; right: 0.5em;
+  ul {
+    padding-left: 0;
+  }
 
-    ul li.title {
-      margin: 0.5em 0; 
-    }
+  .nav-sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+    justify-content: center;
+    height: 100%;
 
-    .hamburger {
-      display: block;
-
-      .active:nth-child(2){
-        opacity: 0;
-      }
-      .active:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-      }
-      .active:nth-child(3){
-        transform: translateY(8px) rotate(-45deg);
-      }
-    }
-
-    .nav-menu {
+    .nav-title {
+      font-size: var(--step-1);
+      // margin: 10px 0;
       display: flex;
-      position: fixed;
-      right: -100%;
-      margin-top: $header-height - 1.8em;
-      padding-top: 16px;
-      gap: 0;
-      flex-direction: column-reverse;
-      background-color: #292928;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
+      align-items: center;
 
-      &.active {
-        right: 0;
-      }
-    }
+      a {
+        color: white;
+        width: 100%;
+        padding: 20px 10px 20px;
+        display: inline-block;
 
-    .nav-link {
-        line-height: 40px;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 0;
-        display: block;
-        margin: 0 1em 1em 1em;
-
-        .active {
-            background: linear-gradient(#749619, #527f0e);
-            background-color: #659e10;
-            border: 1px solid #527f0e;
-            box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
+        &:hover, &.active {
+          background: rgba(255, 255, 255, 0.197);
+          border-radius: 3px;
         }
+      }
     }
   }
 }

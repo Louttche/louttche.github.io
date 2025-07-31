@@ -1,0 +1,9 @@
+- name: About me
+  link: "#about-me"
+- name: Projects
+  link: "#projects"
+- name: Skills
+  link: "#skills"
+
+# - name: Contact
+#   link: /contact/

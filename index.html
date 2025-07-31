@@ -2,26 +2,29 @@
 layout: default
 ---
 
-<div class="scroll-container">
-    <div class="content-section fullscreen-section">
-        <h2 id="about-me" class="content-section-title"><a href="#about-me">About me</a></h2>
-        <hr>
-        {%include about_me.html %}
-    </div>
-    <div class="content-section fullscreen-section">
-        <div id="projects">
-            <h2 class="content-section-title"><a href="#projects">Projects</a></h2>
+<div id="home-page">
+    {% include sidebar.html %}
+    <div class="scroll-container">
+        <div class="content-section fullscreen-section">
+            <h2 id="about-me" class="content-section-title"><a href="#about-me">About me</a></h2>
             <hr>
-            <div class="scrollable-content">
-                {% include project_card_gallery.html %}
+            {%include about_me.html %}
+        </div>
+        <div class="content-section fullscreen-section">
+            <div id="projects">
+                <h2 class="content-section-title"><a href="#projects">Projects</a></h2>
+                <hr>
+                <div class="scrollable-content">
+                    {% include project_card_gallery.html %}
+                </div>
             </div>
         </div>
-    </div>
-    <div class="content-section fullscreen-section">
-        <h2 id="skills" class="content-section-title"><a href="#skills">Skills</a></h2>
-        <hr>
-        <div class="scrollable-content">
-            {% include category_card_gallery.html %}
+        <div class="content-section fullscreen-section">
+            <h2 id="skills" class="content-section-title"><a href="#skills">Skills</a></h2>
+            <hr>
+            <div class="scrollable-content">
+                {% include category_card_gallery.html %}
+            </div>
         </div>
     </div>
 </div>
