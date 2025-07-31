@@ -29,6 +29,10 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media screen and (max-height: 800px) {
+        -webkit-line-clamp: 1;
+      }
     }
 
     .project-date {
