@@ -9,6 +9,7 @@ $line-break-p: 30px;
 
 $background-colorful: linear-gradient(90deg, rgba(42, 123, 155, 0.5) 0%, rgba(255, 255, 255, 0.8) 50%, rgb(212, 255, 95) 100%);
 $card-width: 500px;
+$card-border-radius: 12px;
 
 // Theme related //
 $theme-font: 14px/1.4 Tahoma, sans-serif;
@@ -29,6 +30,7 @@ $theme-border-hover: 1px solid #527f0e;
 $theme-background-hover: linear-gradient(#749619, #527f0e);
 $theme-background-color-hover: #659e10;
 $theme-background-color-dark: #1e1e1e;
+$theme-background-color-dark-faded: #1e1e1ed2;
 $theme-background-color-dark-gray: #2f2f2f9e;
 
 $theme-text-primary-color: #93bd20;
