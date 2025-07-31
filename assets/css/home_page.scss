@@ -4,7 +4,8 @@
   // grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); // See "Cards Grid" at: https://ishadeed.com/article/css-grid-minmax/
   // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   // grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(auto, 70ch) minmax(1rem, 1fr);
-
+  max-height: 65vh;
+  overflow: scroll;
   gap: 0.5em;
 
   @media (max-width: 950px) {
@@ -50,9 +51,5 @@
     .about-me-paragraph.light {
       background-color: #597c00c9;
     }
-  }
-
-  #about-me-contact {
-    overflow: hidden;
   }
 }
