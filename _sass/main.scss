@@ -215,7 +215,7 @@ section {
       }
 
       &.fullscreen-section {
-        max-width: 75%;
+        max-width: 90%;
         min-height: 100vh;
         height: auto;
         scroll-snap-align: center;
@@ -250,8 +250,11 @@ section {
           }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 780px) {
           max-width: 95%;
+        }
+        @media (max-width: 450px) {
+          max-width: 100%;
         }
       }
 
