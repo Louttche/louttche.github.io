@@ -7,13 +7,10 @@
   border-top: 1px solid $theme-secondary-color;
 }
 
-.glide__slide .skills-container {
-  // flex-wrap: nowrap; // Issue: scrolls the carousel too.
-  @media screen and (max-height: 765px),
-    screen and (max-width: 480px) {
-    max-height: 90px;
-    overflow-y: scroll;
-  }
+.glide .skills-container {
+  flex-direction: column;
+  border-top: none;
+  border-left: 1px solid $theme-secondary-color;
 }
 
 .skill-badge {
@@ -24,6 +21,8 @@
   border-radius: 6px;
   transition: background-color 0.2s ease;
   align-content: center;
+  text-align: center;
+  max-width: 140px;
 }
 
 .skill-badge:hover {
