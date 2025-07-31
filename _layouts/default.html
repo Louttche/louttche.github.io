@@ -19,6 +19,9 @@
 
   <body>
     <section>
+      {% if page.url != '/' %}
+        <a style="padding-left: 40px; width: 100%;" href="/#projects"><< Go back</a>
+      {% endif %}
       {% if page.title or page.description %}
         <div id="title">
           {% if page.title %}
