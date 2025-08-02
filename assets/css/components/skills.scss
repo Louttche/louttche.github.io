@@ -4,25 +4,23 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem 1.5rem;
-  border-top: 1px solid $theme-secondary-color;
+  border-top: 1px solid $border-color;
 }
 
 .glide .skills-container {
   flex-direction: column;
   border-top: none;
-  border-left: 1px solid $theme-secondary-color;
+  border-left: 1px solid green;
 }
 
 .skill-badge {
+  color: white;
   display: inline-block;
   padding: 0.25rem 0.5rem;
-  background-color: $theme-secondary-color;
-  color: white;
   border-radius: 6px;
   transition: background-color 0.2s ease;
   align-content: center;
   text-align: center;
-  max-width: 140px;
 }
 
 .skill-badge:hover {

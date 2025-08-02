@@ -1,40 +1,40 @@
-// Global vars
-$header-height: 4.3em;
-
+// Fonts
 $line-break-h1: 85px;
 $line-break-h2: 85px;
 $line-break-h3: 48px;
 $line-break-h4: 33px;
 $line-break-p: 30px;
 
+// Colors
 $background-colorful: linear-gradient(90deg, rgba(42, 123, 155, 0.5) 0%, rgba(255, 255, 255, 0.8) 50%, rgb(212, 255, 95) 100%);
+$background-dark-blue: #0c283c;
+
+// Component vars
 $card-width: 500px;
 $card-border-radius: 12px;
+$card-text-color: white;
 
-// Theme related //
-$theme-font: 14px/1.4 Tahoma, sans-serif;
-$theme-font-family: Tahoma, sans-serif; // 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$theme-primary-color: #527f0e;
-$theme-primary-color-light: #5d910b;
-$theme-secondary-color: #93bd20;
-// Use in combination > background, border-bottom, box-shadow
-$theme-background-image: url(../images/nav-bg.gif) #353535;
-$theme-border-bottom: 4px solid #434343;
-$theme-box-shadow: 0px 1px 3px rgba(0,0,0,.25);
-// Use in combination -> border, background, background-color
-$theme-border: 1px solid #5d910b;
-$theme-background: linear-gradient(#93bd20, #659e10);
-$theme-background-color: #93bd20;
+// FROM CAYMAN THEME
+// Breakpoints
+$large-breakpoint: 64em !default;
+$medium-breakpoint: 42em !default;
 
-$theme-border-hover: 1px solid #527f0e;
-$theme-background-hover: linear-gradient(#749619, #527f0e);
-$theme-background-color-hover: #659e10;
-$theme-background-color-dark: #1e1e1e;
-$theme-background-color-dark-faded: #1e1e1ed2;
-$theme-background-color-dark-gray: #2f2f2f9e;
+// Headers
+$header-heading-color: #fff !default;
+$header-bg-color: #159957 !default;
+$header-bg-color-secondary: #155799 !default;
 
-$theme-text-primary-color: #93bd20;
-$theme-text-secondary-color: #f0e7d5;
-$theme-text-secondary-color-dark: #b6b6b6;
+// Text
+$section-headings-color: #159957 !default;
+$body-text-color: #606c71 !default;
+$body-link-color: #1e6bb8 !default;
+$blockquote-text-color: #819198 !default;
 
-$theme-color-dark: #202020;
+// Code
+$code-bg-color: #f3f6fa !default;
+$code-text-color: #567482 !default;
+
+// Borders
+$border-color: #dce6f0 !default;
+$table-border-color: #e9ebec !default;
+$hr-border-color: #eff0f1 !default;

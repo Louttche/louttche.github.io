@@ -1,7 +1,7 @@
-<a href="{{ project.url }}" class="project-card-link">
-  <div class="project-card border-gradient">
+<a href="{{ project.url }}" class="card-link">
+  <div class="card">
     <div class="card-header">
-      <h3 class="project-title">{{ project.title }}</h3>
+      <h3 class="card-title">{{ project.title }}</h3>
       <div class="project-date">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -14,14 +14,7 @@
         </span>
       </div>
       <hr>
-      <div class="project-content flex-content-row">
-        <!-- {% if project.cover_image_path %}
-          <div class="project-image-container">
-            <img class="project-image" src="/assets/{{ project.cover_image_path }}">
-          </div>
-        {% endif %} -->
-        <p class="project-description">{{ project.description }}</p>
-      </div>
+      <p class="card-content">{{ project.description }}</p>
     </div>
     <div class="card-footer">
       {% include project_skills.html %}

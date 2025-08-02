@@ -1,0 +1,85 @@
+.glide {
+  .glide__track-container {
+    background: $background-dark-blue;
+    border-radius: 8px;
+
+    .glide__track {
+      padding: 0 0 10px 0;
+
+      .glide__slides {
+        height: 100%;
+
+        .glide__slide {
+          text-align: center;
+          margin: auto 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            box-shadow: -5px 3px 8px rgba(0, 0, 0, 0.3);
+          }
+
+          .image-caption {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+    
+    .glide__arrows {
+      color: white;
+      border: none;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+
+      .btn {
+        margin-bottom: 0;
+      }
+
+      .glide__arrow--left, .glide__arrow--right {
+        min-height: 50%;
+        height: 100%;
+        padding: 30px;
+        max-width: 10%;
+      }
+    }
+
+    .glide__bullets {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+
+      .glide__bullet {
+        width: 1em;
+        height: 1em;
+        padding: 0;
+        border-radius: 50%;
+        border-color: $background-dark-blue;
+        margin: 2px 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .glide__bullet--active {
+        background: $background-dark-blue;
+      }
+    }
+  }
+}
+
+#project-image-carousel {
+  height: 60vh;
+
+  .glide, .glide__track-container, .glide__arrows, .glide__track, .glide__slides {
+    height: 100%;
+  }
+}

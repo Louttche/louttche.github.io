@@ -1,3 +1,8 @@
+main:has(> #home-page) {
+  max-width: 100%;
+  padding: 0;
+}
+
 #home-page {
   display: flex;
 
@@ -23,7 +28,7 @@
   
     #about-me-content {
       padding: 25px 40px;
-      background-color: $theme-background-color-dark-gray;
+      background-color: gray;
       overflow: auto;
       justify-content: center;
       display: grid;
@@ -45,10 +50,6 @@
         padding: 10px 16px;
         margin: 7px 0;
         border-radius: 8px;
-  
-        p {
-          font-size: var(--step--1);
-        }
       }
   
       .about-me-paragraph.light {

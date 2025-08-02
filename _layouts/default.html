@@ -16,27 +16,21 @@
     <!-- Analytics -->
     <script src="https://cdn.counter.dev/script.js" data-id="7d098b43-05a7-4335-9ba4-25c02fcf2411" data-utcoffset="2"></script>
   </head>
-
   <body>
-    <section>
-      {% if page.url != '/' %}
-        <a style="padding-left: 40px; width: 100%;" href="/#projects"><< Go back</a>
-      {% endif %}
-      {% if page.title or page.description %}
-        <div id="title">
-          {% if page.title %}
-          <h1>{{ page.title }}</h1>
-          {% endif %}
-          {% if page.description %}
-          <p>{{ page.description }}</p>
-          {% endif %}
-          <hr>
-        </div>
-      {% endif %}
-      <div id="content">
-        {{ content }}
-      </div>
-    </section>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    {% if page.title or page.description %}
+      <header class="page-header" role="banner">
+        <a class="go-back-btn" href="/#projects"><< Go back</a>
+        {% if page.title %}<h1 class="project-name">{{ page.title }}</h1>{% endif %}
+        {% if page.description %}<h2 class="project-tagline">{{ page.description }}</h2>{% endif %}
+        {% if page.github %}
+          <a target="_blank" href="{{ page.github }}" class="btn">View on GitHub</a>
+        {% endif %}
+      </header>
+    {% endif %}
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
   </body>
 </html>
