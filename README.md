@@ -9,7 +9,7 @@
 ### Requirements
 - Ruby v3.4.4
 - Jekyll v3.10.0
-- [jekyll-theme-midnight](https://github.com/pages-themes/midnight)
+- [jekyll-theme-cayman](https://pages-themes.github.io/cayman/)
 - github-pages v232
 
 ### Run locally

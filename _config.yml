@@ -31,9 +31,11 @@ baseurl: ""
 # github_username:  louttche
 repository: louttche/louttche.github.io
 # Build settings
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
+# theme: jekyll-theme-midnight
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-analytics
 #   - jekyll-feed
 
