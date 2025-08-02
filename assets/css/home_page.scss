@@ -7,6 +7,8 @@ main:has(> #home-page) {
   display: flex;
 
   .about-me-section {
+    border: 1px solid $background-dark-blue;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     // grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); // See "Cards Grid" at: https://ishadeed.com/article/css-grid-minmax/
@@ -15,20 +17,24 @@ main:has(> #home-page) {
     max-height: fit-content;
     overflow: scroll;
     gap: 0.5em;
+
+    #contact-form-compact {
+      border-left: 1px dashed $background-dark-blue;
+      padding: 20px;
+    }
   
     @media (max-width: 950px) {
       grid-template-columns: 1fr;
     }
   
     @media (max-width: 950px) and (max-height: 1275px), (max-width: 576px) {
-      #about-me-contact {
+      #contact-form-compact {
         display: none;
       }
     }
   
     #about-me-content {
       padding: 25px 40px;
-      background-color: gray;
       overflow: auto;
       justify-content: center;
       display: grid;
@@ -42,19 +48,11 @@ main:has(> #home-page) {
         border: 2px solid white;
         margin: 1.5em 0 0 1.5em;
       }
-  
-      .about-me-paragraph {
-        display: flex;
-        align-items: center;
-        background-color: #0000003a;
-        padding: 10px 16px;
-        margin: 7px 0;
-        border-radius: 8px;
-      }
-  
-      .about-me-paragraph.light {
-        background-color: #597c00c9;
-      }
     }
+  }
+
+  #contact-form {
+    padding: 18px;
+    border: 1px solid $background-dark-blue;
   }
 }

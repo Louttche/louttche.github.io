@@ -47,7 +47,6 @@ html, body {
         justify-content: center;
 
         &.fullscreen-section {
-          max-width: 90%;
           min-height: 100vh;
           height: auto;
           scroll-snap-align: center;
@@ -146,10 +145,5 @@ html, body {
     border-width: 3px;
 
     border-image-source: $background-colorful; //linear-gradient(to left, #743ad5, #d53a9d);
-  }
-
-  #contact-form {
-    padding: 20px;
-    height: 91%;
   }
 }

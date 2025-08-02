@@ -1,7 +1,7 @@
 nav {
   min-width: 180px;
   margin: 5px auto;
-  background: linear-gradient(#93bd20, #659e10);
+  background: linear-gradient($header-bg-color, $header-bg-color-secondary);
 
   ul {
     padding-left: 0;
@@ -23,6 +23,7 @@ nav {
         width: 100%;
         padding: 20px 10px 20px;
         display: inline-block;
+        text-decoration: none;
 
         &:hover, &.active {
           background: rgba(255, 255, 255, 0.197);

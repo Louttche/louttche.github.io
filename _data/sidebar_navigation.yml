@@ -4,6 +4,5 @@
   link: "#projects"
 - name: Skills
   link: "#skills"
-
-# - name: Contact
-#   link: /contact/
+- name: Contact
+  link: "#contact"
