@@ -32,12 +32,10 @@ baseurl: ""
 repository: louttche/louttche.github.io
 # Build settings
 theme: jekyll-theme-cayman
-# theme: jekyll-theme-midnight
 
 plugins:
   - jekyll-remote-theme
   - jekyll-analytics
-#   - jekyll-feed
 
 # Collections
 collections:

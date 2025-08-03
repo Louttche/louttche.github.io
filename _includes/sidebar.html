@@ -1,8 +1,12 @@
-<nav>
-  <ul class="nav-sidebar-menu">
+<nav id="nav-sidebar">
+  <div id="nav-sidebar-controls">
+    <button id="openbtn" class="btn" onclick="openNav()">&#9776;</button>
+    <a href="javascript:void(0)" id="closebtn" class="btn" onclick="closeNav()">&times;</a>
+  </div>
+  <ul id="nav-sidebar-menu">
     {% assign nav_items = site.data.sidebar_navigation %}
-    {% for item in nav_items %}
-      <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
-    {% endfor %}
+      {% for item in nav_items %}
+        <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
+      {% endfor %}
   </ul>
 </nav>
