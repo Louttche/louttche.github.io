@@ -2,7 +2,7 @@ domain: louttche.github.io
 base_url: ""
 
 # Build settings
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
 
 # Collections
 collections:
