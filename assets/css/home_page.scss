@@ -6,53 +6,71 @@ main:has(> #home-page) {
 #home-page {
   display: flex;
 
-  .about-me-section {
-    border: 1px solid $background-dark-blue;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    // grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); // See "Cards Grid" at: https://ishadeed.com/article/css-grid-minmax/
-    // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    // grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(auto, 70ch) minmax(1rem, 1fr);
-    max-height: fit-content;
-    overflow: scroll;
-    gap: 0.5em;
+  #home-page-content {
+    #about-me, #contact {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
 
-    #contact-form-compact {
-      border-left: 1px dashed $background-dark-blue;
-      padding: 20px;
+    #about-me {
+      .about-me-section {
+        border: 1px solid $background-dark-blue;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        // grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); // See "Cards Grid" at: https://ishadeed.com/article/css-grid-minmax/
+        // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        // grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(auto, 70ch) minmax(1rem, 1fr);
+        max-height: fit-content;
+        overflow: scroll;
+        gap: 0.5em;
+    
+        #contact-form-compact {
+          border-left: 1px dashed $background-dark-blue;
+          padding: 20px;
+        }
+      
+        @media (max-width: 950px) {
+          grid-template-columns: 1fr;
+        }
+      
+        @media (max-width: 950px) and (max-height: 1275px), (max-width: 576px) {
+          #contact-form-compact {
+            display: none;
+          }
+        }
+      
+        #about-me-content {
+          padding: 25px 40px;
+          overflow: auto;
+          justify-content: center;
+          display: grid;
+          min-height: fit-content;
+          max-height: 934px;
+      
+          .about-me-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin: 1.5em 0 0 1.5em;
+          }
+        }
+      }
     }
-  
-    @media (max-width: 950px) {
-      grid-template-columns: 1fr;
-    }
-  
-    @media (max-width: 950px) and (max-height: 1275px), (max-width: 576px) {
-      #contact-form-compact {
-        display: none;
+
+    #projects, #skills {
+      @media screen and (min-width: 2240px) {
+        width: 80%;
+        margin: 0 auto;
       }
     }
   
-    #about-me-content {
-      padding: 25px 40px;
-      overflow: auto;
-      justify-content: center;
-      display: grid;
-      min-height: fit-content;
-      max-height: 934px;
-  
-      .about-me-image {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        border: 2px solid white;
-        margin: 1.5em 0 0 1.5em;
+    #contact {
+      #contact-form {
+        padding: 18px;
+        border: 1px solid $background-dark-blue;
       }
     }
-  }
-
-  #contact-form {
-    padding: 18px;
-    border: 1px solid $background-dark-blue;
   }
 }
