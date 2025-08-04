@@ -92,6 +92,11 @@ html, body {
         .content-section-title {
           margin: 0 0 5px;
           text-align: center;
+
+          a {
+            color: $section-headings-color;
+            text-decoration: none;
+          }
         }
 
         @media (max-width: 500px) {

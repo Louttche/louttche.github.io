@@ -70,6 +70,29 @@
     }
   }
 
+  #nav-sidebar-social-links {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    
+    #nav-sidebar-social-links-container {
+      display: flex;
+      width: 65%;
+      justify-content: end;
+      background-color: white;
+
+      #github-link, #linkedin-link {
+        display: flex;
+        margin: 5px;
+        width: 40px;
+      }
+    }
+  }
+
   @media screen and (max-width: 800px) {
     width: 85px;
 
@@ -84,6 +107,10 @@
     }
 
     #nav-sidebar-menu {
+      display: none;
+    }
+
+    #nav-sidebar-social-links {
       display: none;
     }
   }

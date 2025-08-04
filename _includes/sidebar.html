@@ -5,8 +5,14 @@
   </div>
   <ul id="nav-sidebar-menu">
     {% assign nav_items = site.data.sidebar_navigation %}
-      {% for item in nav_items %}
-        <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
-      {% endfor %}
+    {% for item in nav_items %}
+      <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
+    {% endfor %}
   </ul>
+  <div id="nav-sidebar-social-links">
+    <div id="nav-sidebar-social-links-container">
+      <a id="github-link" href="https://www.github.com/louttche" target="_blank"><img src="/assets/images/github.png" /></a>
+      <a id="linkedin-link" href="https://www.linkedin.com/in/louttche" target="_blank"><img src="/assets/images/linkedin.png" /></a>
+    </div>
+  </div>
 </nav>
