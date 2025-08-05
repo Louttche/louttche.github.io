@@ -8,8 +8,15 @@ main:has(> #home-page) {
 
   #home-page-content {
     #about-me, #contact {
-      max-width: 1600px;
       margin: 0 auto;
+    }
+
+    #about-me {
+      max-width: 1280px;
+    }
+
+    #contact {
+      max-width: 900px;
     }
 
     #about-me {
