@@ -36,11 +36,9 @@ const setActiveNavLink = () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollContainer = document.querySelector(".scroll-container");
-    const currentSection = document.querySelector("section");
+    const homePage = document.getElementById("home-page-content");
 
-    if (scrollContainer == null) {
-        currentSection.classList.add("with-padding");
-    } else {
+    if (homePage != null) {
         setActiveNavLink();
         scrollContainer.addEventListener("scroll", (_e) => {
             setActiveNavLink();
