@@ -2,11 +2,13 @@
   layout: default
 ---
 {% assign project = page %}
+{% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
 
-<div id="project-image-carousel" class="content-section">
-  {% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
-  {% include image_carousel.html %}
-</div>
+{% if image_list != empty %}
+  <div id="project-image-carousel" class="content-section">
+    {% include image_carousel.html %}
+  </div>
+{% endif %}
 <div id="project-information" class="content-section">
   {{ page.content }}
 </div>
