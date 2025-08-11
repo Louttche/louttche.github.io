@@ -26,6 +26,19 @@ html, body {
   margin: 0;
   padding: 0;
 
+  .btn {
+    &.btn-dark {
+      width: fit-content;
+      color: white;
+      background-color: $background-dark-blue;
+      margin-bottom: 0;
+  
+      &:hover {
+        background-color: $background-dark-blue-hover;
+      }
+    }
+  }
+
   .go-back-btn {
     color: white;
     display: flex;
@@ -111,6 +124,11 @@ html, body {
 
       scroll-snap-type: y mandatory;
     }
+  }
+
+  main:has(> .content-section > .card-gallery-grid) {
+    max-width: none;
+    margin: 0 0;
   }
 
   .hpfield {

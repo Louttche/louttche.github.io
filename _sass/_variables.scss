@@ -7,7 +7,8 @@ $line-break-p: 30px;
 
 // Colors
 $background-colorful: linear-gradient(90deg, rgba(42, 123, 155, 0.5) 0%, rgba(255, 255, 255, 0.8) 50%, rgb(212, 255, 95) 100%);
-$background-dark-blue: #0a2131;
+$background-dark-blue: rgb(10, 33, 49);
+$background-dark-blue-hover: rgba(10, 33, 49, 0.7);
 
 // Component vars
 $card-width: 500px;
