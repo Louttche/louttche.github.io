@@ -28,6 +28,7 @@ html, body {
 
   .btn {
     &.btn-dark {
+      width: fit-content;
       color: white;
       background-color: $background-dark-blue;
       margin-bottom: 0;
