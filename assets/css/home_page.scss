@@ -17,6 +17,7 @@ main:has(> #home-page) {
 
     #contact {
       max-width: 900px;
+      width: 95%;
     }
 
     #about-me {
@@ -77,6 +78,17 @@ main:has(> #home-page) {
       #contact-form {
         padding: 18px;
         border: 1px solid $background-dark-blue;
+      }
+    }
+
+    #contact, #about-me {
+      form {
+        display: grid;
+
+        input[type=submit] {
+          padding: 10px 20px;
+          justify-self: end;
+        }
       }
     }
   }
