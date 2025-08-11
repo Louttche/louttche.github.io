@@ -12,6 +12,7 @@ const getVisibleSectionId = () => {
     const aboutMeSection = document.getElementById('about-me');
     const projectsSection = document.getElementById('projects');
     const skillsSection = document.getElementById('skills');
+    const contactSection = document.getElementById('contact');
 
     if (isVisibleInViewport(aboutMeSection)) {
         return 'about-me';
@@ -19,6 +20,8 @@ const getVisibleSectionId = () => {
         return 'projects';
     } else if (isVisibleInViewport(skillsSection)) {
         return 'skills';
+    } else if (isVisibleInViewport(contactSection)) {
+        return 'contact';
     }
 };
 
