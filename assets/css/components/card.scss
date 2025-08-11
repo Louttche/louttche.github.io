@@ -36,15 +36,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
             text-align: left;
-
-            @media screen and (max-height: 780px),
-                screen and (max-width: 420px) {
-                -webkit-line-clamp: 2;
-            }
-            @media screen and (max-height: 700px),
-                screen and (max-width: 360px) {
-                -webkit-line-clamp: 1;
-            }
         }
     }
 
@@ -53,6 +44,14 @@
         flex: 0 0 auto;
         gap: 1rem;
         margin-top: auto;
+    }
+}
+
+#skills .card {
+    .card-header {
+        .card-content {
+            display: flex;
+        }
     }
 }
 

@@ -3,7 +3,7 @@
   flex: 1 1 auto;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   border-top: 1px solid $background-dark-blue;
 }
 
@@ -16,10 +16,12 @@
 .skill-badge {
   color: white;
   display: inline-block;
+  height: fit-content;
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
   transition: background-color 0.2s ease;
   align-content: center;
+  text-wrap: nowrap;
   text-align: center;
 }
 
