@@ -4,6 +4,8 @@
   position: relative;
   width: $sidebar-width-expanded;
 
+  height: 100vh;
+
   transition: 0.5s;
 
   background: linear-gradient($header-bg-color, $header-bg-color-secondary);
