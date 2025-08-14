@@ -6,6 +6,13 @@ function toggleSidebar(isOpen) {
     const sidebarSocialLinks = document.getElementById("nav-sidebar-social-links");
 
     if (isOpen) {
+        sidebarCloseBtn.style.display = "none";
+        sidebarSocialLinks.style.display = "none";
+        sidebarOpenBtn.style.display = "block";
+        sidebarLinks.style.display = "none";
+        
+        sidebar.style.width = "85px";
+    } else {
         sidebar.style.width = "200px";
         sidebarOpenBtn.style.display = "none";
         sidebarCloseBtn.style.display = "flex";
@@ -14,13 +21,6 @@ function toggleSidebar(isOpen) {
             sidebarLinks.style.display = "flex";
             sidebarSocialLinks.style.display = "flex";
         }, 250);
-    } else {
-        sidebarCloseBtn.style.display = "none";
-        sidebarSocialLinks.style.display = "none";
-        sidebarOpenBtn.style.display = "block";
-        sidebarLinks.style.display = "none";
-        
-        sidebar.style.width = "85px";
     }
 }
 
