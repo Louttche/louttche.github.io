@@ -60,7 +60,7 @@ html, body {
         flex-direction: column;
         justify-content: center;
 
-        &.fullscreen-section {
+        &.snap-section {
           min-height: 100vh;
           height: auto;
           scroll-snap-align: center;

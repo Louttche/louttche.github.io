@@ -5,26 +5,26 @@ layout: default
 <div id="home-page">
     {% include sidebar.html %}
     <div id="home-page-content" class="scroll-container">
-        <div id="about-me" class="content-section fullscreen-section">
+        <div id="about-me" class="content-section snap-section">
             <h2 class="content-section-title"><a href="#about-me">About me</a></h2>
             <hr>
             {%include about_me.html %}
         </div>
-        <div id="projects" class="content-section fullscreen-section">
+        <div id="projects" class="content-section snap-section">
             <h2 class="content-section-title"><a href="#projects">Projects</a></h2>
             <hr>
             <div class="scrollable-content">
                 {% include project_card_gallery.html %}
             </div>
         </div>
-        <div id="skills" class="content-section fullscreen-section">
+        <div id="skills" class="content-section snap-section">
             <h2 class="content-section-title"><a href="#skills">Skills</a></h2>
             <hr>
             <div class="scrollable-content">
                 {% include category_card_gallery.html %}
             </div>
         </div>
-        <div id="contact" class="content-section fullscreen-section">
+        <div id="contact" class="content-section snap-section">
             <h2 class="content-section-title"><a href="#contact">Contact me</a></h2>
             <hr>
             {%include contact.html %}
