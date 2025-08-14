@@ -42,9 +42,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const homePage = document.getElementById("home-page-content");
 
     if (homePage != null) {
+        // Nav links - set as active based on scroll event
         setActiveNavLink();
         scrollContainer.addEventListener("scroll", (_e) => {
             setActiveNavLink();
         });
-    };
+
+        // Overflow snap behaviour fix (disable scrolling on `html, body` on homepage to only use the snap scrolling)
+        document.documentElement.style.overflowY = 'hidden';
+        document.body.style.overflowY = 'hidden';
+    } else {
+        // Enable scrolling on `html, body` for the pages without snap-scrolling (hard-coded homepage)
+        document.documentElement.style.overflowY = 'auto';
+        document.body.style.overflowY = 'auto';
+    }
 });
