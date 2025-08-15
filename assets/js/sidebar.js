@@ -1,5 +1,4 @@
-function toggleSidebar(isOpen) {
-    const sidebar = document.getElementById("nav-sidebar");
+function toggleSidebar(sidebar, isOpen) {
     const sidebarLinks = document.getElementById("nav-sidebar-menu");
     const sidebarOpenBtn = document.getElementById("openbtn");
     const sidebarCloseBtn = document.getElementById("closebtn");
@@ -22,12 +21,27 @@ function toggleSidebar(isOpen) {
             sidebarSocialLinks.style.display = "flex";
         }, 250);
     }
+
+    sidebar.classList.add(isOpen ? "collapsed" : "expanded");
+    sidebar.classList.remove(isOpen ? "expanded" : "collapsed");
 }
 
-function openNav() {
-    toggleSidebar(false);
+function openNav(sidebar) {
+    toggleSidebar(sidebar, false);
 };
 
-function closeNav() {
-    toggleSidebar(true);
+function closeNav(sidebar) {
+    toggleSidebar(sidebar, true);
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById("nav-sidebar");
+    const openButton = document.getElementById('openbtn');
+    const closeButton = document.getElementById('closebtn');
+
+    openButton.addEventListener('click', () => { openNav(sidebar) });
+    closeButton.addEventListener('click', () => { closeNav(sidebar) });
+
+    const homePageContent = document.getElementById('home-page-content');
+    homePageContent.addEventListener('click', () => { if (sidebar.classList.contains('expanded')) { closeNav(sidebar); } })
+});
