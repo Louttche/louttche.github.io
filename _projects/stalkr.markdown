@@ -5,7 +5,7 @@
     cover_image_path: images/stalkr/logo.png
     image_path: images/stalkr/carousel
     github: 'https://github.com/Louttche/ANDR2'
-    start_date: 01-01-2021
+    start_date: 2021-01-01
 ---
 
 ### About this project

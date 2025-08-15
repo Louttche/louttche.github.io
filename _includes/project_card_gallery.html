@@ -2,9 +2,9 @@
     {% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
     <div class="card-gallery-grid">
         {% for project in sorted_projects %}
-        <div class="card-gallery-item">
-            {% include project_card.html %}
-        </div>
+            <div class="card-gallery-item">
+                {% include project_card.html %}
+            </div>
         {% endfor %}
     </div>
 {% endif %}
