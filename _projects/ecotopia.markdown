@@ -6,7 +6,7 @@
     cover_image_path: images/ecotopia/EcoTopiaLogo.png
     image_path: images/ecotopia/carousel
     github: 'https://github.com/Louttche/ProCP-Weather_Simulation'
-    start_date: 01-01-2020
+    start_date: 2020-01-01
 ---
 
 ### About this project

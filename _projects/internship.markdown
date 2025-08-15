@@ -4,7 +4,7 @@
     description: Internship Project
     cover_image_path: images/internship/generator_tool.webp
     image_path: images/internship
-    start_date: 01-01-2021
+    start_date: 2021-12-01
 ---
 
 ### About this project

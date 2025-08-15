@@ -5,7 +5,7 @@
     cover_image_path: images/temp
     image_path: images/temp/carousel
     github: ''
-    start_date: 01-01-2021
+    start_date: 2021-01-01
 ---
 
 ### About this project

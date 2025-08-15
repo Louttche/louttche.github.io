@@ -5,7 +5,7 @@
     cover_image_path: images/ipv1/detecting_green_apples.png
     image_path: images/ipv1
     github: 'https://github.com/Louttche/IPV1'
-    start_date: 01-01-2021
+    start_date: 2021-01-01
 ---
 
 ### About this project

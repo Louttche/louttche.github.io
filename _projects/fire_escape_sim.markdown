@@ -6,7 +6,7 @@
     cover_image_path: images/fire_escape_sim/main_menu.webp
     image_path: images/fire_escape_sim
     github: https://github.com/Louttche/ProCP-Fire_Simulation
-    start_date: 01-01-2019
+    start_date: 2019-01-01
 ---
 
 ### About this project
