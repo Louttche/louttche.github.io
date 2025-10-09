@@ -3,12 +3,16 @@
 ---
 {% assign project = page %}
 {% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
+{% assign image_count = image_list | size %}
 
-{% if image_list != empty %}
+{% if image_count > 1 %}
   <div id="project-image-carousel" class="content-section">
     {% include image_carousel.html %}
   </div>
+{% elsif image_count == 1 %}
+  <img class="carousel carousel-inner" src="{{ site.baseurl }}{{ image_list[0].path }}" style="border: 2px solid #157a76; border-radius: 10px;" />
 {% endif %}
+
 <div id="project-information" class="content-section">
   {{ page.content }}
 </div>
