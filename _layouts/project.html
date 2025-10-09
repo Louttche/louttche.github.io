@@ -6,6 +6,9 @@
 {% assign image_count = image_list | size %}
 
 {% if image_count > 1 %}
+  <div id="project-image-carousel-compact" class="content-section">
+    {% include image_carousel_compact.html %}
+  </div>
   <div id="project-image-carousel" class="content-section">
     {% include image_carousel.html %}
   </div>
