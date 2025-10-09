@@ -78,6 +78,10 @@ main:has(> #home-page) {
       #contact-form {
         padding: 18px;
         border: 1px solid $background-dark-blue;
+
+        label {
+          font-size: 14px;
+        }
       }
     }
 
