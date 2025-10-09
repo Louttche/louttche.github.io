@@ -5,17 +5,7 @@
         <h3 class="card-title">{{ project.title }}</h3>
         <img style="width: 24px; height: 24px; align-self: start; margin-top: 2px;" src="/assets/images/external_link.png" />
       </div>
-      <div class="project-date">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        <span>
-          {{ project.start_date | date: '%Y' }}{% if project.end_date %} - {{ project.end_date | date: '%Y' }}{% endif %}
-        </span>
-      </div>
+      {% include project_date.html %}
       <hr>
       <p class="card-content">{{ project.description }}</p>
     </div>

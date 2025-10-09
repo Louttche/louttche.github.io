@@ -23,6 +23,7 @@
       <header class="page-header" role="banner">
         <a class="go-back-btn" href="/#projects"><< Go back</a>
         {% if page.title %}<h1 class="project-name">{{ page.title }}</h1>{% endif %}
+        {% include project_date.html %}
         {% if page.description %}<h2 class="project-tagline">{{ page.description }}</h2>{% endif %}
         {% if page.github %}
           <a target="_blank" href="{{ page.github }}" class="btn">View on GitHub</a>
