@@ -2,7 +2,7 @@
     layout: project
     title: Image Processing for Deep learning Training
     description: Internship Project
-    cover_image_path: images/internship/generator_tool.webp
+    thumbnail: images/internship/generator_tool.webp
     image_path: images/internship
     start_date: 2021-12-01
 ---

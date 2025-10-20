@@ -3,7 +3,7 @@
     title: Ecotopia
     description: |
         University Project for ProCP course about simulating how human actions affect the Earth due to rising emissions of CO₂. This simulation includes map animation and graphs to show live statistics.
-    cover_image_path: images/ecotopia/EcoTopiaLogo.png
+    thumbnail: images/ecotopia/EcoTopiaLogo.png
     image_path: images/ecotopia/carousel
     github: 'https://github.com/Louttche/ProCP-Weather_Simulation'
     start_date: 2020-01-01

@@ -2,7 +2,7 @@
     layout: project
     title: Predictive Maintenance of P&P Nozzles
     description: Graduation Internship
-    cover_image_path: images/graduation/crisp-dm.wepb
+    thumbnail: images/graduation/crisp-dm.wepb
     image_path: images/graduation
     start_date: 2022-06-01
     end_date: 2023-02-01

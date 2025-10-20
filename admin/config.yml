@@ -15,6 +15,14 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'project' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - label: "Cover image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        media_folder: "/assets/images/{{slug}}"
+        media_library:
+          config:
+            max_file_size: 512000
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
