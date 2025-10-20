@@ -2,8 +2,12 @@
     layout: project
     title: IPV1 - Image Processing and Vision
     description: Covered the fundamentals of image restoration, segmentation and denoising using MATLAB tools.
-    thumbnail: images/ipv1/detecting_green_apples.png
-    image_path: images/ipv1
+    carousel_images:
+        - /assets/images/ipv1/carousel/detecting_green_apples.png
+        - /assets/images/ipv1/carousel/detecting_red_apples.png
+        - /assets/images/ipv1/carousel/enhance_image.png
+        - /assets/images/ipv1/carousel/restoration_deblur.png
+        - /assets/images/ipv1/carousel/restoration_using_defogging_and_dehazeing.png
     github: 'https://github.com/Louttche/IPV1'
     start_date: 2021-01-01
 ---

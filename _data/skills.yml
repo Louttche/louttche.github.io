@@ -1,7 +1,7 @@
 - name: Agile
   color: "#0077B6"
   categories: ['collaboration']
-  projects: ['internship', 'graduation_internship']
+  projects: ['internship', 'graduation-internship']
 - name: SCRUM
   color: "#409716"
   categories: ['collaboration']
@@ -12,15 +12,15 @@
 - name: Bash
   color: "#357A38"
   categories: ['devops']
-  projects: ['internship', 'graduation_internship']
+  projects: ['internship', 'graduation-internship']
 - name: C#
   color: "#68217A"
   categories: ['game development']
-  projects: ['fire_escape_sim', 'internship']
+  projects: ['fire-escape-sim', 'internship']
 - name: C++
   color: "#00599C"
   categories: ['game development']
-  projects: ['fire_escape_sim']
+  projects: ['fire-escape-sim']
 - name: CSS
   color: "#264DE4"
   categories: ['web']
@@ -35,7 +35,7 @@
 - name: HTML
   color: "#E44D26"
   categories: ['web']
-  projects: ['graduation_internship', 'web3', 'ecotopia']
+  projects: ['graduation-internship', 'web3', 'ecotopia']
 - name: Java
   color: "#28527A"
   categories: ['mobile']
@@ -58,7 +58,7 @@
 - name: Node.js
   color: "#14532D"
   categories: ['web']
-  projects: ['graduation_internship', 'internship', 'web3']
+  projects: ['graduation-internship', 'internship', 'web3']
 - name: PHP
   color: "#4B3869"
   categories: ['web']
@@ -69,7 +69,7 @@
 - name: Python
   color: "#B9770E"
   categories: ['ai/ml']
-  projects: ['internship', 'graduation_internship']
+  projects: ['internship', 'graduation-internship']
 - name: PyTorch
   color: "#EE4C2C"
   categories: ['ai/ml']
@@ -96,7 +96,7 @@
 - name: Unity
   color: "#23272F"
   categories: ['game development', '3d']
-  projects: ['fire_escape_sim']
+  projects: ['fire-escape-sim']
 - name: Unreal Engine
   color: "#2A1A8E"
   categories: ['game development', '3d']
