@@ -12,8 +12,16 @@
 - [jekyll-theme-cayman](https://pages-themes.github.io/cayman/)
 - github-pages v232
 
-### Run locally
+### Scripts
+
+  Run app locally:
 
   ```bash
   bundle exec jekyll serve [--livereload] [--config _config_dev.yml]
+  ```
+
+  Editing using Decap locally
+
+  ```bash
+    npx decap-server 
   ```
