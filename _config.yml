@@ -60,7 +60,7 @@ jekyll_analytics:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - _projects/project_template.markdown
+  - _projects/project_template.md
   - local_assets
 #   - .sass-cache/
 #   - .jekyll-cache/
