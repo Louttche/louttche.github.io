@@ -1,0 +1,91 @@
+# Example: https://github.com/decaporg/decap-cms/blob/main/dev-test/config.yml
+
+local_backend: true
+
+publish_mode: editorial_workflow
+backend:
+  name: git-gateway # test-repo
+  repo: louttche/louttche.github.io
+  branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/be142cc9-2254-4e28-be62-0237ccc22b4b/pkce
+  auth_token_endpoint: /sites/be142cc9-2254-4e28-be62-0237ccc22b4b/token
+  gateway_url: https://gateway.decapbridge.com
+
+  squash_merges: true
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+# Enable PKCE fields (optional, recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://louttche.github.io
+media_folder: 'assets/images'
+collections:
+  - name: 'project'
+    label: 'Project'
+    folder: '_projects/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'project' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - name: "thumbnail"
+        required: false
+        label: "Cover image"
+        widget: "image"
+        choose_url: true
+        media_folder: "/assets/images/{{slug}}"
+        media_library:
+          config:
+            max_file_size: 512000
+      - name: 'carousel_images'
+        required: false
+        label: "Carousel images"
+        widget: 'image'
+        choose_url: true
+        media_folder: "/assets/images/{{slug}}/carousel"
+        media_library:
+          config:
+            multiple: true
+            max_files: 10
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'About Section'
+        name: 'about'
+        file: '_includes/about_me.html'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - label: 'Navigation'
+        name: 'navigation'
+        file: '_data/sidebar_navigation.yml'
+        fields:
+          - label: 'Navigation Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }

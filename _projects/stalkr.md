@@ -2,8 +2,11 @@
     layout: project
     title: Stalkr
     description: Android Studio university group project in Kotlin making use of Firebase auth and Google Maps API services.
-    cover_image_path: images/stalkr/logo.png
-    image_path: images/stalkr/carousel
+    thumbnail: /assets/images/stalkr/logo.png
+    carousel_images:
+        - /assets/images/stalkr/carousel/firebase_auth_and_android_permissions.png
+        - /assets/images/stalkr/carousel/gyroscope_and_accelerometer_sensors.webp
+        - /assets/images/stalkr/carousel/usage_of_google_maps_API.webp
     github: 'https://github.com/Louttche/ANDR2'
     start_date: 2021-01-01
 ---

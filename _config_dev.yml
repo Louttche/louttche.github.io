@@ -13,5 +13,5 @@ collections:
     description: A collection of my projects.
 
 exclude:
-  - _projects/project_template.markdown
+  - _projects/project_template.md
   - local_assets

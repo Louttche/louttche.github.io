@@ -2,7 +2,7 @@
   layout: default
 ---
 {% assign project = page %}
-{% assign image_list = site.static_files | where_exp: 'image', "image.path contains page.image_path" %}
+{% assign image_list = site.static_files | where_exp: 'image', "page.carousel_images contains image.path" %}
 {% assign image_count = image_list | size %}
 
 {% if image_count > 1 %}

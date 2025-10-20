@@ -4,10 +4,13 @@
     <button id="closebtn" class="btn">&times;</button>
   </div>
   <ul id="nav-sidebar-menu">
-    {% assign nav_items = site.data.sidebar_navigation %}
+    {% assign nav_items = site.data.sidebar_navigation.items %}
     {% for item in nav_items %}
       <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
     {% endfor %}
+    {% if jekyll.environment == "development" %}
+      <li class="nav-title"><a href="/admin">Admin</a></li>
+    {% endif %}
   </ul>
   <div id="nav-sidebar-social-links">
     <div id="nav-sidebar-social-links-container">
