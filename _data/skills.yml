@@ -1,111 +1,186 @@
-- name: Agile
-  color: "#0077B6"
-  categories: ['collaboration']
-  projects: ['internship', 'graduation-internship']
-- name: SCRUM
-  color: "#409716"
-  categories: ['collaboration']
-- name: Android Studio
-  color: "#21825C"
-  categories: ['mobile']
-  projects: ['stalkr']
-- name: Bash
-  color: "#357A38"
-  categories: ['devops']
-  projects: ['internship', 'graduation-internship']
-- name: C#
-  color: "#68217A"
-  categories: ['game development']
-  projects: ['fire-escape-sim', 'internship']
-- name: C++
-  color: "#00599C"
-  categories: ['game development']
-  projects: ['fire-escape-sim']
-- name: CSS
-  color: "#264DE4"
-  categories: ['web']
-  projects: ['web3', 'ecotopia']
-- name: Docker
-  color: "#2496ED"
-  categories: ['devops']
-  projects: ['internship']
-- name: Git
-  color: "#F05032"
-  categories: ['collaboration', 'devops']
-- name: HTML
-  color: "#E44D26"
-  categories: ['web']
-  projects: ['graduation-internship', 'web3', 'ecotopia']
-- name: Java
-  color: "#28527A"
-  categories: ['mobile']
-- name: JavaScript
-  color: "#B8860B"
-  categories: ['web']
-  projects: ['web3']
-- name: Jupyter Notebook
-  color: "#3E4E88"
-  categories: ['data', 'ai/ml']
-  projects: ['internship']
-- name: Kotlin
-  color: "#5F3DC4"
-  categories: ['mobile']
-  projects: ['stalkr']
-- name: Image Processing
-  color: "#00796B"
-  categories: ['data']
-  projects: ['ipv1', 'ipv2']
-- name: Node.js
-  color: "#14532D"
-  categories: ['web']
-  projects: ['graduation-internship', 'internship', 'web3']
-- name: PHP
-  color: "#4B3869"
-  categories: ['web']
-  projects: ['web3', 'ecotopia']
-- name: PostgreSQL
-  color: "#274472"
-  categories: ['data']
-- name: Python
-  color: "#B9770E"
-  categories: ['ai/ml']
-  projects: ['internship', 'graduation-internship']
-- name: PyTorch
-  color: "#EE4C2C"
-  categories: ['ai/ml']
-- name: React
-  color: "#1B4965"
-  categories: ['web']
-- name: Ruby
-  color: "#A93226"
-  categories: ['web']
-- name: Ruby on Rails
-  color: "#C0392B"
-  categories: ['web']
-- name: mySQL
-  color: "#1D3557"
-  categories: ['data']
-  projects: ['web3', 'ecotopia']
-- name: TensorFlow
-  color: "#2EC4B6"
-  projects: ['internship']
-  categories: ['ai/ml']
-- name: TypeScript
-  color: "#1565C0"
-  categories: ['web']
-- name: Unity
-  color: "#23272F"
-  categories: ['game development', '3d']
-  projects: ['fire-escape-sim']
-- name: Unreal Engine
-  color: "#2A1A8E"
-  categories: ['game development', '3d']
-  projects: ['internship']
-- name: MATLAB
-  color: "#E16737"
-  categories: ['data', 'ai/ml']
-  projects: ['ipv1', 'ipv2']
-- name: Laravel
-  color: "#FF0000"
-  categories: ['web']
-  projects: ['web3', 'ecotopia']
+items:
+  - name: Agile
+    color: "#0077B6"
+    categories:
+      - collaboration
+    projects:
+      - internship
+      - graduation-internship
+  - name: SCRUM
+    color: "#409716"
+    categories:
+      - collaboration
+  - name: Android Studio
+    color: "#21825C"
+    categories:
+      - mobile
+    projects:
+      - stalkr
+  - name: Bash
+    color: "#357A38"
+    categories:
+      - devops
+    projects:
+      - internship
+      - graduation-internship
+  - name: C#
+    color: "#68217A"
+    categories:
+      - game development
+    projects:
+      - fire-escape-sim
+      - internship
+  - name: C++
+    color: "#00599C"
+    categories:
+      - game development
+    projects:
+      - fire-escape-sim
+  - name: CSS
+    color: "#264DE4"
+    categories:
+      - web
+    projects:
+      - web3
+      - ecotopia
+  - name: Docker
+    color: "#2496ED"
+    categories:
+      - devops
+    projects:
+      - internship
+  - name: Git
+    color: "#F05032"
+    categories:
+      - collaboration
+      - devops
+  - name: HTML
+    color: "#E44D26"
+    categories:
+      - web
+    projects:
+      - graduation-internship
+      - web3
+      - ecotopia
+  - name: Java
+    color: "#28527A"
+    categories:
+      - mobile
+  - name: JavaScript
+    color: "#B8860B"
+    categories:
+      - web
+    projects:
+      - web3
+  - name: Jupyter Notebook
+    color: "#3E4E88"
+    categories:
+      - data
+      - ai/ml
+    projects:
+      - internship
+  - name: Kotlin
+    color: "#5F3DC4"
+    categories:
+      - mobile
+    projects:
+      - stalkr
+  - name: Image Processing
+    color: "#00796B"
+    categories:
+      - data
+    projects:
+      - ipv1
+      - ipv2
+  - name: Node.js
+    color: "#14532D"
+    categories:
+      - web
+    projects:
+      - graduation-internship
+      - internship
+      - web3
+  - name: PHP
+    color: "#4B3869"
+    categories:
+      - web
+    projects:
+      - web3
+      - ecotopia
+  - name: PostgreSQL
+    color: "#274472"
+    categories:
+      - data
+  - name: Python
+    color: "#B9770E"
+    categories:
+      - ai/ml
+    projects:
+      - internship
+      - graduation-internship
+  - name: PyTorch
+    color: "#EE4C2C"
+    categories:
+      - ai/ml
+  - name: React
+    color: "#1B4965"
+    categories:
+      - web
+  - name: Ruby
+    color: "#A93226"
+    categories:
+      - web
+  - name: Ruby on Rails
+    color: "#C0392B"
+    categories:
+      - web
+  - name: mySQL
+    color: "#1D3557"
+    categories:
+      - data
+    projects:
+      - web3
+      - ecotopia
+  - name: TensorFlow
+    color: "#2EC4B6"
+    projects:
+      - internship
+    categories:
+      - ai/ml
+  - name: TypeScript
+    color: "#1565C0"
+    categories:
+      - web
+  - name: Unity
+    color: "#23272F"
+    categories:
+      - game development
+      - 3d
+    projects:
+      - fire-escape-sim
+  - name: Unreal Engine
+    color: "#2A1A8E"
+    categories:
+      - game development
+      - 3d
+    projects:
+      - internship
+  - name: MATLAB
+    color: "#E16737"
+    categories:
+      - data
+      - ai/ml
+    projects:
+      - ipv1
+      - ipv2
+  - name: Laravel
+    color: "#FF0000"
+    categories:
+      - web
+    projects:
+      - web3
+      - ecotopia
+  - name: Test
+    color: "#64fd78"
+    projects:
+      - draft-project

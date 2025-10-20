@@ -1,6 +1,6 @@
-{% if site.data.categories != blank %}
+{% if site.data.categories.items != blank %}
     <div class="card-gallery-grid">
-        {% for category in site.data.categories %}
+        {% for category in site.data.categories.items %}
         <div class="card-gallery-item">
             {% include category_card.html %}
         </div>

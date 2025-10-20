@@ -1,16 +1,17 @@
-- name: Web
-  description: Frontend and backend development for websites and web applications, including UI, frameworks, and APIs.
-- name: Data
-  description: Data analysis, data science, and data visualization, focusing on extracting insights and presenting information.
-- name: Devops
-  description: DevOps practices, containerization, version control, and automation for efficient software delivery and operations.
-- name: AI/ML
-  description: Artificial intelligence and machine learning, including algorithms, models, and intelligent systems.
-- name: 3D
-  description: 3D graphics, and simulation of real or virtual environments.
-- name: Mobile
-  description: Developing applications for mobile devices and understanding mobile platforms.
-- name: Collaboration
-  description: Teamwork, project workflows, and effective code sharing in software projects.
-- name: Game Development
-  description: Game development, including game engines, interactive design, graphics, and gameplay programming.
+items:
+  - name: Web
+    description: Frontend and backend development for websites and web applications, including UI, frameworks, and APIs.
+  - name: Data
+    description: Data analysis, data science, and data visualization, focusing on extracting insights and presenting information.
+  - name: Devops
+    description: DevOps practices, containerization, version control, and automation for efficient software delivery and operations.
+  - name: AI/ML
+    description: Artificial intelligence and machine learning, including algorithms, models, and intelligent systems.
+  - name: 3D
+    description: 3D graphics, and simulation of real or virtual environments.
+  - name: Mobile
+    description: Developing applications for mobile devices and understanding mobile platforms.
+  - name: Collaboration
+    description: Teamwork, project workflows, and effective code sharing in software projects.
+  - name: Game Development
+    description: Game development, including game engines, interactive design, graphics, and gameplay programming.
