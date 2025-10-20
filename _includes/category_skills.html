@@ -1,5 +1,5 @@
 {% assign category_name = category.name |  downcase %}
-{% assign category_skills = site.data.skills | where_exp: "skill", "skill.categories contains category_name" %}
+{% assign category_skills = site.data.skills.items | where_exp: "skill", "skill.categories contains category_name" %}
 
 {% if category_skills.size > 0 %}
     <div class="skills-container">

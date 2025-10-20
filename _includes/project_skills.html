@@ -1,4 +1,4 @@
-{% assign project_skills = site.data.skills | where_exp: "skill", "skill.projects contains project.slug" %}
+{% assign project_skills = site.data.skills.items | where_exp: "skill", "skill.projects contains project.slug" %}
 
 {% if project_skills.size > 0 %}
     <div class="skills-container">

@@ -32,7 +32,7 @@ site_url: https://louttche.github.io
 media_folder: 'assets/images'
 collections:
   - name: 'project'
-    label: 'Project'
+    label: 'Projects'
     folder: '_projects/'
     create: true
     slug: '{{slug}}'
@@ -60,6 +60,8 @@ collections:
           config:
             multiple: true
             max_files: 10
+      - { label: 'Project Start Date', name: 'start_date', widget: 'datetime', format: 'YYYY-MM-DD' }
+      - { label: 'Project End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
@@ -89,3 +91,36 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Link, name: link, widget: string }
+      - label: 'Skills'
+        name: 'skills'
+        file: '_data/skills.yml'
+        fields:
+          - label: 'Skills'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Color, name: color, widget: color }
+              - label: Projects
+                name: projects
+                required: false
+                widget: relation
+                collection: project
+                value_field: "{{slug}}"
+                search_fields: ['{{slug}}']
+                multiple: true
+              - label: Categories
+                name: categories
+                required: false
+                widget: list
+                multiple: true
+      - label: 'Categories'
+        name: 'categories'
+        file: '_data/categories.yml'
+        fields:
+          - label: 'Categories'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: string }
