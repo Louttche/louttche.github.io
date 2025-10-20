@@ -4,7 +4,7 @@
     <button id="closebtn" class="btn">&times;</button>
   </div>
   <ul id="nav-sidebar-menu">
-    {% assign nav_items = site.data.sidebar_navigation %}
+    {% assign nav_items = site.data.sidebar_navigation.items %}
     {% for item in nav_items %}
       <li class="nav-title"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
     {% endfor %}
