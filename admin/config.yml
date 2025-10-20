@@ -2,9 +2,33 @@
 
 local_backend: true
 
+publish_mode: editorial_workflow
 backend:
   name: git-gateway # test-repo
+  repo: louttche/louttche.github.io
   branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/be142cc9-2254-4e28-be62-0237ccc22b4b/pkce
+  auth_token_endpoint: /sites/be142cc9-2254-4e28-be62-0237ccc22b4b/token
+  gateway_url: https://gateway.decapbridge.com
+
+  squash_merges: true
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+# Enable PKCE fields (optional, recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://louttche.github.io
 media_folder: 'assets/images'
 collections:
   - name: 'project'
