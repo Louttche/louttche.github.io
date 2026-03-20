@@ -188,3 +188,7 @@ items:
     color: "#42b883"
     categories:
       - web
+  - name: Nuxt.js
+    color: "#00dc82"
+    categories:
+      - web
