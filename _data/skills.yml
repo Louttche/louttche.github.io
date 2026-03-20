@@ -184,3 +184,11 @@ items:
     color: "#64fd78"
     projects:
       - draft-project
+  - name: Vue.js
+    color: "#42b883"
+    categories:
+      - web
+  - name: Nuxt.js
+    color: "#00dc82"
+    categories:
+      - web
